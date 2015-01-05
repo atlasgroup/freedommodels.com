@@ -1,1 +1,2322 @@
-Hello!
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <script>
+
+      /* Modernizr 2.8.3 (Custom Build) | MIT & BSD
+       * Build: http://modernizr.com/download/#-flexbox-csstransforms-csstransforms3d-csstransitions-webgl-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-css_vhunit-css_vmaxunit-css_vminunit-css_vwunit
+       */
+      ;window.Modernizr=function(a,b,c){function z(a){j.cssText=a}function A(a,b){return z(m.join(a+";")+(b||""))}function B(a,b){return typeof a===b}function C(a,b){return!!~(""+a).indexOf(b)}function D(a,b){for(var d in a){var e=a[d];if(!C(e,"-")&&j[e]!==c)return b=="pfx"?e:!0}return!1}function E(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:B(f,"function")?f.bind(d||b):f}return!1}function F(a,b,c){var d=a.charAt(0).toUpperCase()+a.slice(1),e=(a+" "+o.join(d+" ")+d).split(" ");return B(b,"string")||B(b,"undefined")?D(e,b):(e=(a+" "+p.join(d+" ")+d).split(" "),E(e,b,c))}var d="2.8.3",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l={}.toString,m=" -webkit- -moz- -o- -ms- ".split(" "),n="Webkit Moz O ms",o=n.split(" "),p=n.toLowerCase().split(" "),q={},r={},s={},t=[],u=t.slice,v,w=function(a,c,d,e){var f,i,j,k,l=b.createElement("div"),m=b.body,n=m||b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:h+(d+1),l.appendChild(j);return f=["&#173;",'<style id="s',h,'">',a,"</style>"].join(""),l.id=h,(m?l:n).innerHTML+=f,n.appendChild(l),m||(n.style.background="",n.style.overflow="hidden",k=g.style.overflow,g.style.overflow="hidden",g.appendChild(n)),i=c(l,a),m?l.parentNode.removeChild(l):(n.parentNode.removeChild(n),g.style.overflow=k),!!i},x={}.hasOwnProperty,y;!B(x,"undefined")&&!B(x.call,"undefined")?y=function(a,b){return x.call(a,b)}:y=function(a,b){return b in a&&B(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=u.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(u.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(u.call(arguments)))};return e}),q.flexbox=function(){return F("flexWrap")},q.webgl=function(){return!!a.WebGLRenderingContext},q.csstransforms=function(){return!!F("transform")},q.csstransforms3d=function(){var a=!!F("perspective");return a&&"webkitPerspective"in g.style&&w("@media (transform-3d),(-webkit-transform-3d){#modernizr{left:9px;position:absolute;height:3px;}}",function(b,c){a=b.offsetLeft===9&&b.offsetHeight===3}),a},q.csstransitions=function(){return F("transition")};for(var G in q)y(q,G)&&(v=G.toLowerCase(),e[v]=q[G](),t.push((e[v]?"":"no-")+v));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)y(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof f!="undefined"&&f&&(g.className+=" "+(b?"":"no-")+a),e[a]=b}return e},z(""),i=k=null,e._version=d,e._prefixes=m,e._domPrefixes=p,e._cssomPrefixes=o,e.testProp=function(a){return D([a])},e.testAllProps=F,e.testStyles=w,g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+t.join(" "):""),e}(this,this.document),Modernizr.addTest("cssvhunit",function(){var a;return Modernizr.testStyles("#modernizr { height: 50vh; }",function(b,c){var d=parseInt(window.innerHeight/2,10),e=parseInt((window.getComputedStyle?getComputedStyle(b,null):b.currentStyle).height,10);a=e==d}),a}),Modernizr.addTest("cssvmaxunit",function(){var a;return Modernizr.testStyles("#modernizr { width: 50vmax; }",function(b,c){var d=window.innerWidth/100,e=window.innerHeight/100,f=parseInt((window.getComputedStyle?getComputedStyle(b,null):b.currentStyle).width,10);a=parseInt(Math.max(d,e)*50,10)==f}),a}),Modernizr.addTest("cssvwunit",function(){var a;return Modernizr.testStyles("#modernizr { width: 50vw; }",function(b,c){var d=parseInt(window.innerWidth/2,10),e=parseInt((window.getComputedStyle?getComputedStyle(b,null):b.currentStyle).width,10);a=e==d}),a}),Modernizr.addTest("cssvminunit",function(){var a;return Modernizr.testStyles("#modernizr { width: 50vmin; }",function(b,c){var d=window.innerWidth/100,e=window.innerHeight/100,f=parseInt((window.getComputedStyle?getComputedStyle(b,null):b.currentStyle).width,10);a=parseInt(Math.min(d,e)*50,10)==f}),a});
+
+    </script>
+
+    <link rel="stylesheet" href="styles/fonts.css">
+
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7425932/613646/css/fonts.css">
+
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+
+      #browser {
+
+        font: 24px 'Gotham SSm A', 'Gotham SSm B' , 'Helvetica' , 'Arial' , sans-serif;
+        text-align: center;
+        background: white;
+        position: fixed;
+        z-index: 99999;
+        padding: 25%;
+        color: black;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+
+      }
+
+      .js.flexbox.csstransforms.csstransforms3d.csstransitions.cssvhunit.cssvmaxunit.cssvwunit.cssvminunit #browser {
+
+        display: none;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <div class="top-menu">
+
+      Freedom
+
+    </div>
+
+    <!--
+    <label for="menu-toggle" class="menu-toggle">Menu</label>
+    -->
+
+    <div class="top-menu-navigation">
+
+      <div class="mini-index">
+
+        <a class="mi-card chloe" href="#chloe"></a>
+
+        <!--<a class="mi-card erin" href="#erin"></a>-->
+
+        <!--<a class="mi-card gabriela" href="#gabriela"></a>-->
+
+        <a class="mi-card jacqueline" href="#jacqueline"></a>
+
+        <a class="mi-card jorji" href="#jorji"></a>
+
+        <a class="mi-card kota" href="#kota"></a>
+
+        <a class="mi-card lauren" href="#lauren"></a>
+
+        <a class="mi-card lily" href="#lily"></a>
+
+        <a class="mi-card megan" href="#megan"></a>
+
+        <a class="mi-card miriam" href="#miriam"></a>
+
+      </div>
+
+    </div>
+
+    <!-- top index model cards -->
+
+    <div id="main-index" class="index">
+
+      <a class="card" href="#chloe">
+
+        <figure>
+
+          <img src="images/chloe-001.jpg">
+
+          <figcaption>
+
+            Chloe
+
+          </figcaption>
+
+        </figure>
+
+      </a>
+
+      <!--<a class="card" href="#erin">
+
+        <figure>
+
+          <img src="images/erin-001.jpg">
+
+          <figcaption>
+
+            Erin
+
+          </figcaption>
+
+        </figure>
+
+      </a>-->
+
+      <!--<a class="card" href="#gabriela">
+
+        <figure>
+
+          <img src="images/gabriela-001.jpg">
+
+          <figcaption>
+
+            Gabriela
+
+          </figcaption>
+
+        </figure>
+
+      </a>-->
+
+      <a class="card" href="#jacqueline">
+
+        <figure>
+
+          <img src="images/jacqueline-001.jpg">
+
+          <figcaption>
+
+            Jacqueline
+
+          </figcaption>
+
+        </figure>
+
+      </a>
+
+      <a class="card" href="#jorji">
+
+        <figure>
+
+          <img src="images/jorji-001.jpg">
+
+          <figcaption>
+
+            Jorji
+
+          </figcaption>
+
+        </figure>
+
+      </a>
+
+      <a class="card" href="#kota">
+
+        <figure>
+
+          <img src="images/kota-001.jpg">
+
+          <figcaption>
+
+            Kota
+
+          </figcaption>
+
+        </figure>
+
+      </a>
+
+      <a class="card" href="#lauren">
+
+        <figure>
+
+          <img src="images/lauren-001.jpg">
+
+          <figcaption>
+
+            Lauren Bennett
+
+          </figcaption>
+
+        </figure>
+
+      </a>
+
+      <a class="card" href="#lily">
+
+        <figure>
+
+          <img src="images/lily-001.jpg">
+
+          <figcaption>
+
+            Lily
+
+          </figcaption>
+
+        </figure>
+
+      </a>
+
+      <a class="card" href="#megan">
+
+        <figure>
+
+          <img src="images/megan-001.jpg">
+
+          <figcaption>
+
+            Megan
+
+          </figcaption>
+
+        </figure>
+
+      </a>
+
+      <a class="card" href="#miriam">
+
+        <figure>
+
+          <img src="images/miriam-001.png">
+
+          <figcaption>
+
+            Miriam
+
+          </figcaption>
+
+        </figure>
+
+      </a>
+
+    </div>
+
+    <!-- chloe -->
+
+    <figure id="chloe" class="model">
+
+      <figcaption>
+
+        <h2>Chloe</h2>
+
+        <label for="view-chloe-book" class="view-book">
+
+          View book
+
+        </label>
+
+        <!--
+
+        <label for="view-chloe-polaroids" class="view-polaroids view-chloe-polaroids">
+
+          View polaroids
+
+        </label>
+
+        -->
+
+      </figcaption>
+
+      <img src="images/chloe-001.jpg">
+
+      <figcaption>
+
+        <h3>Measurements</h3>
+
+        <p>
+
+          Height <strong>5'8" | 173cm</strong>
+
+          <br>
+
+          Bust <strong>32" | 81cm</strong>
+
+          <br>
+
+          Waist <strong>25" | 63.5cm</strong>
+
+          <br>
+
+          Hip <strong>35" | 89cm</strong>
+
+          <br>
+
+          Dress <strong>2 | 34</strong>
+
+          <br>
+
+          Shoe <strong>7 | 38</strong>
+
+          <br>
+
+          Hair <strong>Brown | Brun</strong>
+
+          <br>
+
+          Eyes <strong>Blue | Bleu</strong>
+
+        </p>
+
+      </figcaption>
+
+    </figure>
+
+    <input type="checkbox" id="view-chloe-book">
+
+    <input type="radio" name="chloe-pages" id="chloe-page-1" checked>
+    <input type="radio" name="chloe-pages" id="chloe-page-2">
+    <input type="radio" name="chloe-pages" id="chloe-page-3">
+    <input type="radio" name="chloe-pages" id="chloe-page-4">
+
+    <div id="chloe-book" class="two">
+
+      <label for="chloe-page-1" class="page-label">1</label>
+      <label for="chloe-page-2" class="page-label">2</label>
+      <label for="chloe-page-3" class="page-label">3</label>
+      <label for="chloe-page-4" class="page-label">4</label>
+
+      <div class="page-label-nav">
+
+        <label for="chloe-page-1">1</label>
+        <label for="chloe-page-2">2</label>
+        <label for="chloe-page-3">3</label>
+        <label for="chloe-page-4">4</label>
+      </div>
+
+      <label for="view-chloe-book" class="close-book">Close book</label>
+
+      <div class="book full-spread">
+
+        <img src="images/chloe-002.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/chloe-003.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/chloe-004.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/chloe-005.jpg">
+
+      </div>
+
+    </div>
+
+    <input type="checkbox" id="view-chloe-polaroids">
+
+    <input type="radio" name="chloe-polaroids" id="chloe-polaroids-1" checked>
+
+
+    <!-- erin
+
+    <figure id="erin" class="model">
+
+      <figcaption>
+
+        <h2>Erin</h2>
+
+        <label for="view-erin-book" class="view-book">
+
+          View book
+
+        </label>
+
+        <label class="view-polaroids">
+
+          View polaroids
+
+        </label>
+
+      </figcaption>
+
+      <img src="images/erin-001.jpg">
+
+      <figcaption>
+
+        <h3>Measurements</h3>
+
+        <p>
+
+          Height : 5 foot 9 inches, Bust : 30 inches, Waist : 22 inches, Hip : 35 inches, Dress : 0 — 2, Shoe : 9, Hair : Dark Blonde, Eyes : Blue
+
+        </p>
+
+        <hr>
+
+        <p>
+
+          Hauteur : 1.75 mètres, Buste : 76 centimètres, Taille : 56 centimètres, Hanche : 89 centimètres, Robe : 32 — 34, Chaussure : 40, Cheveux : Blond Foncé, Yeux : Blue
+
+        </p>
+
+      </figcaption>
+
+    </figure>
+
+    <input type="checkbox" id="view-erin-book">
+
+    <input type="radio" name="erin-pages" id="erin-page-1" checked>
+    <input type="radio" name="erin-pages" id="erin-page-2">
+    <input type="radio" name="erin-pages" id="erin-page-3">
+    <input type="radio" name="erin-pages" id="erin-page-4">
+    <input type="radio" name="erin-pages" id="erin-page-5">
+    <input type="radio" name="erin-pages" id="erin-page-6">
+    <input type="radio" name="erin-pages" id="erin-page-7">
+    <input type="radio" name="erin-pages" id="erin-page-8">
+    <input type="radio" name="erin-pages" id="erin-page-9">
+    <input type="radio" name="erin-pages" id="erin-page-10">
+
+
+    <div id="erin-book" class="two">
+
+      <label for="erin-page-1" class="page-label">1</label>
+      <label for="erin-page-2" class="page-label">2</label>
+      <label for="erin-page-3" class="page-label">3</label>
+      <label for="erin-page-4" class="page-label">4</label>
+      <label for="erin-page-5" class="page-label">5</label>
+      <label for="erin-page-6" class="page-label">6</label>
+      <label for="erin-page-7" class="page-label">7</label>
+      <label for="erin-page-8" class="page-label">8</label>
+      <label for="erin-page-9" class="page-label">9</label>
+      <label for="erin-page-10" class="page-label">10</label>
+
+      <div class="page-label-nav">
+
+        <label for="erin-page-1">1</label>
+        <label for="erin-page-2">2</label>
+        <label for="erin-page-3">3</label>
+        <label for="erin-page-4">4</label>
+        <label for="erin-page-5">5</label>
+        <label for="erin-page-6">6</label>
+        <label for="erin-page-7">7</label>
+        <label for="erin-page-8">8</label>
+        <label for="erin-page-9">9</label>
+        <label for="erin-page-10">10</label>
+
+      </div>
+
+      <label for="view-erin-book" class="close-book">Close book</label>
+
+      <div class="book full-spread">
+
+        <img src="images/erin-002.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/erin-003.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/erin-004.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/erin-005.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/erin-006.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/erin-007.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/erin-008.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/erin-009.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/erin-010.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/erin-011.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/erin-012.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/erin-013.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/erin-014.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/erin-015.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/erin-016.jpg">
+
+      </div>
+
+    </div>
+
+     -->
+
+    <!-- gabriela
+
+    <figure id="gabriela" class="model">
+
+      <figcaption>
+
+        <h2>Gabriela</h2>
+
+        <label for="view-gabriela-book" class="view-book">
+
+          View book
+
+        </label>
+
+        <label class="view-polaroids">
+
+          View polaroids
+
+        </label>
+
+      </figcaption>
+
+      <img src="images/gabriela-001.jpg">
+
+      <figcaption>
+
+        <h3>Measurements</h3>
+
+        <p>
+
+          Height : 5 foot 8 inches, Bust : 29 inches, Waist : 23 inches, Hip : 34 inches, Dress : 0, Shoe : 6.5, Hair : Brown, Eyes : Brown
+
+        </p>
+
+        <hr>
+
+        <p>
+
+          Hauteur : 1.73 mètres, Buste : 74 centimètres, Taille : 58 centimètres, Hanche : 86 centimètres, Robe : 32, Chaussure : 37.5, Cheveux : Brun, Yeux : Brun
+
+        </p>
+
+      </figcaption>
+
+    </figure>
+
+    <input type="checkbox" id="view-gabriela-book">
+
+    <input type="radio" name="gabriela-pages" id="gabriela-page-1" checked>
+    <input type="radio" name="gabriela-pages" id="gabriela-page-2">
+    <input type="radio" name="gabriela-pages" id="gabriela-page-3">
+    <input type="radio" name="gabriela-pages" id="gabriela-page-4">
+    <input type="radio" name="gabriela-pages" id="gabriela-page-5">
+    <input type="radio" name="gabriela-pages" id="gabriela-page-6">
+    <input type="radio" name="gabriela-pages" id="gabriela-page-7">
+    <input type="radio" name="gabriela-pages" id="gabriela-page-8">
+    <input type="radio" name="gabriela-pages" id="gabriela-page-9">
+    <input type="radio" name="gabriela-pages" id="gabriela-page-10">
+    <input type="radio" name="gabriela-pages" id="gabriela-page-11">
+
+    <div id="gabriela-book" class="two">
+
+      <label for="gabriela-page-1" class="page-label">1</label>
+      <label for="gabriela-page-2" class="page-label">2</label>
+      <label for="gabriela-page-3" class="page-label">3</label>
+      <label for="gabriela-page-4" class="page-label">4</label>
+      <label for="gabriela-page-5" class="page-label">5</label>
+      <label for="gabriela-page-6" class="page-label">6</label>
+      <label for="gabriela-page-7" class="page-label">7</label>
+      <label for="gabriela-page-8" class="page-label">8</label>
+      <label for="gabriela-page-9" class="page-label">9</label>
+      <label for="gabriela-page-10" class="page-label">10</label>
+      <label for="gabriela-page-11" class="page-label">11</label>
+
+
+      <div class="page-label-nav">
+
+        <label for="gabriela-page-1">1</label>
+        <label for="gabriela-page-2">2</label>
+        <label for="gabriela-page-3">3</label>
+        <label for="gabriela-page-4">4</label>
+        <label for="gabriela-page-5">5</label>
+        <label for="gabriela-page-6">6</label>
+        <label for="gabriela-page-7">7</label>
+        <label for="gabriela-page-8">8</label>
+        <label for="gabriela-page-9">9</label>
+        <label for="gabriela-page-10">10</label>
+        <label for="gabriela-page-11">11</label>
+
+      </div>
+
+      <label for="view-gabriela-book" class="close-book">Close book</label>
+
+      <div class="book full-spread">
+
+        <img src="images/gabriela-002.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/gabriela-003.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/gabriela-004.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/gabriela-005.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/gabriela-006.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/gabriela-007.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/gabriela-008.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/gabriela-009.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/gabriela-010.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/gabriela-011.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/gabriela-012.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/gabriela-013.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/gabriela-014.jpg">
+
+      </div>
+
+    </div>
+
+    -->
+
+    <!-- jacqueline -->
+
+    <figure id="jacqueline" class="model">
+
+      <figcaption>
+
+        <h2>Jacqueline</h2>
+
+        <label for="view-jacqueline-book" class="view-book">
+
+          View book
+
+        </label>
+
+        <!--
+        <label class="view-polaroids">
+
+          View polaroids
+
+        </label>
+        -->
+
+      </figcaption>
+
+      <img class="intro-image" src="images/jacqueline-001.jpg">
+
+      <figcaption>
+
+        <h3>Measurements</h3>
+
+        <p>
+
+          Height <strong>5'9.5" | 176.5cm</strong>
+
+          <br>
+
+          Bust <strong>33.5" | 85cm</strong>
+
+          <br>
+
+          Waist <strong>24" | 61cm</strong>
+
+          <br>
+
+          Hip <strong>36" | 91cm</strong>
+
+          <br>
+
+          Dress <strong>0 | 32</strong>
+
+          <br>
+
+          Shoe <strong>9 | 40</strong>
+
+          <br>
+
+          Hair <strong>Brown | Brun</strong>
+
+          <br>
+
+          Eyes <strong>Blue | Bleu</strong>
+
+        </p>
+
+      </figcaption>
+
+    </figure>
+
+    <input type="checkbox" id="view-jacqueline-book">
+
+    <input type="radio" name="jacqueline-pages" id="jacqueline-page-1" checked>
+    <input type="radio" name="jacqueline-pages" id="jacqueline-page-2">
+    <input type="radio" name="jacqueline-pages" id="jacqueline-page-3">
+    <input type="radio" name="jacqueline-pages" id="jacqueline-page-4">
+    <input type="radio" name="jacqueline-pages" id="jacqueline-page-5">
+    <input type="radio" name="jacqueline-pages" id="jacqueline-page-6">
+    <input type="radio" name="jacqueline-pages" id="jacqueline-page-7">
+    <input type="radio" name="jacqueline-pages" id="jacqueline-page-8">
+    <input type="radio" name="jacqueline-pages" id="jacqueline-page-9">
+    <input type="radio" name="jacqueline-pages" id="jacqueline-page-10">
+    <input type="radio" name="jacqueline-pages" id="jacqueline-page-11">
+    <input type="radio" name="jacqueline-pages" id="jacqueline-page-12">
+
+    <div id="jacqueline-book" class="two">
+
+      <label for="jacqueline-page-1" class="page-label">1</label>
+      <label for="jacqueline-page-2" class="page-label">2</label>
+      <label for="jacqueline-page-3" class="page-label">3</label>
+      <label for="jacqueline-page-4" class="page-label">4</label>
+      <label for="jacqueline-page-5" class="page-label">5</label>
+      <label for="jacqueline-page-6" class="page-label">6</label>
+      <label for="jacqueline-page-7" class="page-label">7</label>
+      <label for="jacqueline-page-8" class="page-label">8</label>
+      <label for="jacqueline-page-9" class="page-label">9</label>
+      <label for="jacqueline-page-10" class="page-label">10</label>
+      <label for="jacqueline-page-11" class="page-label">11</label>
+      <label for="jacqueline-page-12" class="page-label">12</label>
+
+      <div class="page-label-nav">
+
+        <label for="jacqueline-page-1">1</label>
+        <label for="jacqueline-page-2">2</label>
+        <label for="jacqueline-page-3">3</label>
+        <label for="jacqueline-page-4">4</label>
+        <label for="jacqueline-page-5">5</label>
+        <label for="jacqueline-page-6">6</label>
+        <label for="jacqueline-page-7">7</label>
+        <label for="jacqueline-page-8">8</label>
+        <label for="jacqueline-page-9">9</label>
+        <label for="jacqueline-page-10">10</label>
+        <label for="jacqueline-page-11">11</label>
+        <label for="jacqueline-page-12">12</label>
+
+      </div>
+
+      <label for="view-jacqueline-book" class="close-book">Close book</label>
+
+      <div class="book left-page">
+
+        <img src="images/jacqueline-002.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/jacqueline-003.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/jacqueline-004.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/jacqueline-005.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/jacqueline-006.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/jacqueline-007.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/jacqueline-008.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/jacqueline-009.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/jacqueline-010.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/jacqueline-011.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/jacqueline-012.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/jacqueline-013.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/jacqueline-014.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/jacqueline-015.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/jacqueline-016.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/jacqueline-017.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/jacqueline-018.jpg">
+
+      </div>
+
+    </div>
+
+    <!-- jorji -->
+
+    <figure id="jorji" class="model">
+
+      <figcaption>
+
+        <h2>Jorji</h2>
+
+        <label for="view-jorji-book" class="view-book">
+
+          View book
+
+        </label>
+
+        <!--
+        <label class="view-polaroids">
+
+          View polaroids
+
+        </label>
+        -->
+
+      </figcaption>
+
+      <img src="images/jorji-001.jpg">
+
+      <figcaption>
+
+        <h3>Measurements</h3>
+
+        <p>
+
+          Height <strong>5'6" | 168cm</strong>
+
+          <br>
+
+          Bust <strong>28" | 71cm</strong>
+
+          <br>
+
+          Waist <strong>22" | 56cm</strong>
+
+          <br>
+
+          Hip <strong>32" | 81cm</strong>
+
+          <br>
+
+          Dress <strong>0 | 32</strong>
+
+          <br>
+
+          Shoe <strong>6 | 37</strong>
+
+          <br>
+
+          Hair <strong>Brown | Brun</strong>
+
+          <br>
+
+          Eyes <strong>Hazel | Noisetier</strong>
+
+        </p>
+
+      </figcaption>
+
+    </figure>
+
+    <input type="checkbox" id="view-jorji-book">
+
+    <input type="radio" name="jorji-pages" id="jorji-page-1" checked>
+    <input type="radio" name="jorji-pages" id="jorji-page-2">
+    <input type="radio" name="jorji-pages" id="jorji-page-3">
+    <input type="radio" name="jorji-pages" id="jorji-page-4">
+    <input type="radio" name="jorji-pages" id="jorji-page-5">
+    <input type="radio" name="jorji-pages" id="jorji-page-6">
+    <input type="radio" name="jorji-pages" id="jorji-page-7">
+
+    <div id="jorji-book" class="two">
+
+      <label for="jorji-page-1" class="page-label">1</label>
+      <label for="jorji-page-2" class="page-label">2</label>
+      <label for="jorji-page-3" class="page-label">3</label>
+      <label for="jorji-page-4" class="page-label">4</label>
+      <label for="jorji-page-5" class="page-label">5</label>
+      <label for="jorji-page-6" class="page-label">6</label>
+      <label for="jorji-page-7" class="page-label">7</label>
+
+      <div class="page-label-nav">
+
+        <label for="jorji-page-1">1</label>
+        <label for="jorji-page-2">2</label>
+        <label for="jorji-page-3">3</label>
+        <label for="jorji-page-4">4</label>
+        <label for="jorji-page-5">5</label>
+        <label for="jorji-page-6">6</label>
+        <label for="jorji-page-7">7</label>
+
+      </div>
+
+      <label for="view-jorji-book" class="close-book">Close book</label>
+
+      <div class="book left-page">
+
+        <img src="images/jorji-002.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/jorji-003.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/jorji-004.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/jorji-005.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/jorji-006.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/jorji-007.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/jorji-008.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/jorji-009.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/jorji-010.jpg">
+
+      </div>
+
+    </div>
+
+    <!-- kota -->
+
+    <figure id="kota" class="model">
+
+      <figcaption>
+
+        <h2>Kota</h2>
+
+        <label for="view-kota-book" class="view-book">
+
+          View book
+
+        </label>
+
+        <label for="view-kota-polaroids" class="view-polaroids view-kota-polaroids">
+
+          View polaroids
+
+        </label>
+
+      </figcaption>
+
+      <img src="images/kota-001.jpg">
+
+      <figcaption>
+
+        <h3>Measurements</h3>
+
+        <p>
+
+          Height <strong>5'7" | 170cm</strong>
+
+          <br>
+
+          Bust <strong>33" | 84cm</strong>
+
+          <br>
+
+          Waist <strong>25" | 63.5cm</strong>
+
+          <br>
+
+          Hip <strong>36" | 91cm</strong>
+
+          <br>
+
+          Dress <strong>2 &mdash; 4 | 34 &mdash; 36</strong>
+
+          <br>
+
+          Shoe <strong>7.5 | 38.5</strong>
+
+          <br>
+
+          Hair <strong>Blonde | Blond</strong>
+
+          <br>
+
+          Eyes <strong>Brown | Brun</strong>
+
+        </p>
+
+      </figcaption>
+
+    </figure>
+
+    <input type="checkbox" id="view-kota-book">
+
+    <input type="radio" name="kota-pages" id="kota-page-1" checked>
+    <input type="radio" name="kota-pages" id="kota-page-2">
+    <input type="radio" name="kota-pages" id="kota-page-3">
+    <input type="radio" name="kota-pages" id="kota-page-4">
+    <input type="radio" name="kota-pages" id="kota-page-5">
+    <input type="radio" name="kota-pages" id="kota-page-6">
+    <input type="radio" name="kota-pages" id="kota-page-7">
+    <input type="radio" name="kota-pages" id="kota-page-8">
+    <input type="radio" name="kota-pages" id="kota-page-9">
+    <input type="radio" name="kota-pages" id="kota-page-10">
+    <input type="radio" name="kota-pages" id="kota-page-11">
+    <input type="radio" name="kota-pages" id="kota-page-12">
+    <input type="radio" name="kota-pages" id="kota-page-13">
+
+    <div id="kota-book" class="two">
+
+      <label for="kota-page-1" class="page-label">1</label>
+      <label for="kota-page-2" class="page-label">2</label>
+      <label for="kota-page-3" class="page-label">3</label>
+      <label for="kota-page-4" class="page-label">4</label>
+      <label for="kota-page-5" class="page-label">5</label>
+      <label for="kota-page-6" class="page-label">6</label>
+      <label for="kota-page-7" class="page-label">7</label>
+      <label for="kota-page-8" class="page-label">8</label>
+      <label for="kota-page-9" class="page-label">9</label>
+      <label for="kota-page-10" class="page-label">10</label>
+      <label for="kota-page-11" class="page-label">11</label>
+      <label for="kota-page-12" class="page-label">12</label>
+      <label for="kota-page-13" class="page-label">13</label>
+
+      <div class="page-label-nav">
+
+        <label for="kota-page-1">1</label>
+        <label for="kota-page-2">2</label>
+        <label for="kota-page-3">3</label>
+        <label for="kota-page-4">4</label>
+        <label for="kota-page-5">5</label>
+        <label for="kota-page-6">6</label>
+        <label for="kota-page-7">7</label>
+        <label for="kota-page-8">8</label>
+        <label for="kota-page-9">9</label>
+        <label for="kota-page-10">10</label>
+        <label for="kota-page-11">11</label>
+        <label for="kota-page-12">12</label>
+        <label for="kota-page-13">13</label>
+
+      </div>
+
+      <label for="view-kota-book" class="close-book">Close book</label>
+
+      <div class="book full-spread">
+
+        <img src="images/kota-002.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/kota-003.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/kota-004.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/kota-005.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/kota-006.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/kota-007.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/kota-008.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/kota-009.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/kota-010.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/kota-011.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/kota-012.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/kota-013.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/kota-014.jpg">
+
+      </div>
+
+    </div>
+
+    <input type="checkbox" id="view-kota-polaroids">
+
+    <input type="radio" name="kota-polaroids" id="kota-polaroids-1" checked>
+    <input type="radio" name="kota-polaroids" id="kota-polaroids-2">
+    <input type="radio" name="kota-polaroids" id="kota-polaroids-3">
+
+    <div id="kota-polaroids" class="three">
+
+      <label for="kota-polaroids-1" class="page-label">1</label>
+      <label for="kota-polaroids-2" class="page-label">2</label>
+      <label for="kota-polaroids-3" class="page-label">3</label>
+
+      <div class="page-label-nav">
+
+        <label for="kota-polaroids-1">1</label>
+        <label for="kota-polaroids-2">2</label>
+        <label for="kota-polaroids-3">3</label>
+
+      </div>
+
+      <label for="view-kota-polaroids" class="close-polaroids">Close Polaroids</label>
+
+      <div class="book left-page">
+
+        <img src="images/kota-polaroids-001.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/kota-polaroids-002.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/kota-polaroids-003.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/kota-polaroids-004.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/kota-polaroids-005.jpg">
+
+      </div>
+
+    </div>
+
+    <!-- lauren -->
+
+    <figure id="lauren" class="model">
+
+      <figcaption>
+
+        <h2>Lauren Bennett</h2>
+
+        <label for="view-lauren-book" class="view-book">
+
+          View book
+
+        </label>
+
+        <!--
+        <label for="view-lauren-polaroids" class="view-polaroids view-lauren-polaroids">
+
+          View polaroids
+
+        </label>
+        -->
+
+      </figcaption>
+
+      <img src="images/lauren-001.jpg">
+
+      <figcaption>
+
+        <h3>Measurements</h3>
+
+        <p>
+
+          Height <strong>5'7" | 170cm</strong>
+
+          <br>
+
+          Bust <strong>32" | 81cm</strong>
+
+          <br>
+
+          Waist <strong>24" | 61cm</strong>
+
+          <br>
+
+          Hip <strong>34" | 86cm</strong>
+
+          <br>
+
+          Dress <strong>2 | 34</strong>
+
+          <br>
+
+          Shoe <strong>8 | 39</strong>
+
+          <br>
+
+          Hair <strong>Blonde | Blond</strong>
+
+          <br>
+
+          Eyes <strong>Hazel | Noisetier</strong>
+
+        </p>
+
+      </figcaption>
+
+    </figure>
+
+
+    <input type="checkbox" id="view-lauren-book">
+
+    <input type="radio" name="lauren-pages" id="lauren-page-1" checked>
+    <input type="radio" name="lauren-pages" id="lauren-page-2">
+    <input type="radio" name="lauren-pages" id="lauren-page-3">
+    <input type="radio" name="lauren-pages" id="lauren-page-4">
+    <input type="radio" name="lauren-pages" id="lauren-page-5">
+    <input type="radio" name="lauren-pages" id="lauren-page-6">
+    <input type="radio" name="lauren-pages" id="lauren-page-7">
+    <input type="radio" name="lauren-pages" id="lauren-page-8">
+    <input type="radio" name="lauren-pages" id="lauren-page-9">
+    <input type="radio" name="lauren-pages" id="lauren-page-10">
+
+    <div id="lauren-book" class="two">
+
+      <label for="lauren-page-1" class="page-label">1</label>
+      <label for="lauren-page-2" class="page-label">2</label>
+      <label for="lauren-page-3" class="page-label">3</label>
+      <label for="lauren-page-4" class="page-label">4</label>
+      <label for="lauren-page-5" class="page-label">5</label>
+      <label for="lauren-page-6" class="page-label">6</label>
+      <label for="lauren-page-7" class="page-label">7</label>
+      <label for="lauren-page-8" class="page-label">8</label>
+      <label for="lauren-page-9" class="page-label">9</label>
+      <label for="lauren-page-10" class="page-label">10</label>
+
+      <div class="page-label-nav">
+
+        <label for="lauren-page-1">1</label>
+        <label for="lauren-page-2">2</label>
+        <label for="lauren-page-3">3</label>
+        <label for="lauren-page-4">4</label>
+        <label for="lauren-page-5">5</label>
+        <label for="lauren-page-6">6</label>
+        <label for="lauren-page-7">7</label>
+        <label for="lauren-page-8">8</label>
+        <label for="lauren-page-9">9</label>
+        <label for="lauren-page-10">10</label>
+
+      </div>
+
+      <label for="view-lauren-book" class="close-book">Close book</label>
+
+      <div class="book full-spread">
+
+        <img src="images/lauren-002.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lauren-003.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lauren-005.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lauren-006.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lauren-007.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/lauren-008.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/lauren-009.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lauren-010.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lauren-011.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lauren-012.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/lauren-013.jpg">
+
+      </div>
+
+    </div>
+
+
+    <!-- lily -->
+
+    <figure id="lily" class="model">
+
+      <figcaption>
+
+        <h2>Lily</h2>
+
+        <label for="view-lily-book" class="view-book">
+
+          View book
+
+        </label>
+
+        <label for="view-lily-polaroids" class="view-polaroids view-lily-polaroids">
+
+          View polaroids
+
+        </label>
+
+      </figcaption>
+
+      <img src="images/lily-001.jpg">
+
+      <figcaption>
+
+        <h3>Measurements</h3>
+
+        <p>
+
+          Height <strong>5'9" | 175cm</strong>
+
+          <br>
+
+          Bust <strong>32" | 81cm</strong>
+
+          <br>
+
+          Waist <strong>22" | 56cm</strong>
+
+          <br>
+
+          Hip <strong>34" | 86cm</strong>
+
+          <br>
+
+          Dress <strong>0 | 32</strong>
+
+          <br>
+
+          Shoe <strong>9 | 40</strong>
+
+          <br>
+
+          Hair <strong>Brown | Brun</strong>
+
+          <br>
+
+          Eyes <strong>Brown | Brun</strong>
+
+        </p>
+
+      </figcaption>
+
+    </figure>
+
+    <input type="checkbox" id="view-lily-book">
+
+    <input type="radio" name="lily-pages" id="lily-page-1" checked>
+    <input type="radio" name="lily-pages" id="lily-page-2">
+    <input type="radio" name="lily-pages" id="lily-page-3">
+    <input type="radio" name="lily-pages" id="lily-page-4">
+    <input type="radio" name="lily-pages" id="lily-page-5">
+    <input type="radio" name="lily-pages" id="lily-page-6">
+    <input type="radio" name="lily-pages" id="lily-page-7">
+    <input type="radio" name="lily-pages" id="lily-page-8">
+    <input type="radio" name="lily-pages" id="lily-page-9">
+    <input type="radio" name="lily-pages" id="lily-page-10">
+    <input type="radio" name="lily-pages" id="lily-page-11">
+    <input type="radio" name="lily-pages" id="lily-page-12">
+    <input type="radio" name="lily-pages" id="lily-page-13">
+    <input type="radio" name="lily-pages" id="lily-page-14">
+    <input type="radio" name="lily-pages" id="lily-page-15">
+    <input type="radio" name="lily-pages" id="lily-page-16">
+
+    <div id="lily-book" class="two">
+
+      <label for="lily-page-1" class="page-label">1</label>
+      <label for="lily-page-2" class="page-label">2</label>
+      <label for="lily-page-3" class="page-label">3</label>
+      <label for="lily-page-4" class="page-label">4</label>
+      <label for="lily-page-5" class="page-label">5</label>
+      <label for="lily-page-6" class="page-label">6</label>
+      <label for="lily-page-7" class="page-label">7</label>
+      <label for="lily-page-8" class="page-label">8</label>
+      <label for="lily-page-9" class="page-label">9</label>
+      <label for="lily-page-10" class="page-label">10</label>
+      <label for="lily-page-11" class="page-label">11</label>
+      <label for="lily-page-12" class="page-label">12</label>
+      <label for="lily-page-13" class="page-label">13</label>
+      <label for="lily-page-14" class="page-label">14</label>
+      <label for="lily-page-15" class="page-label">15</label>
+      <label for="lily-page-16" class="page-label">16</label>
+
+      <div class="page-label-nav">
+
+        <label for="lily-page-1">1</label>
+        <label for="lily-page-2">2</label>
+        <label for="lily-page-3">3</label>
+        <label for="lily-page-4">4</label>
+        <label for="lily-page-5">5</label>
+        <label for="lily-page-6">6</label>
+        <label for="lily-page-7">7</label>
+        <label for="lily-page-8">8</label>
+        <label for="lily-page-9">9</label>
+        <label for="lily-page-10">10</label>
+        <label for="lily-page-11">11</label>
+        <label for="lily-page-12">12</label>
+        <label for="lily-page-13">13</label>
+        <label for="lily-page-14">14</label>
+        <label for="lily-page-15">15</label>
+        <label for="lily-page-16">16</label>
+
+      </div>
+
+      <label for="view-lily-book" class="close-book">Close book</label>
+
+      <div class="book left-page">
+
+        <img src="images/lily-002.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/lily-003.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/lily-004.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/lily-005.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lily-006.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lily-007.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lily-008.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lily-009.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lily-010.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lily-011.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lily-012.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lily-013.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lily-014.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lily-015.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lily-016.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lily-017.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/lily-018.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/lily-019.jpg">
+
+      </div>
+
+    </div>
+
+    <input type="checkbox" id="view-lily-polaroids">
+
+    <input type="radio" name="lily-polaroids" id="lily-polaroids-1" checked>
+    <input type="radio" name="lily-polaroids" id="lily-polaroids-2">
+    <input type="radio" name="lily-polaroids" id="lily-polaroids-3">
+
+    <div id="lily-polaroids" class="three">
+
+      <label for="lily-polaroids-1" class="page-label">1</label>
+      <label for="lily-polaroids-2" class="page-label">2</label>
+      <label for="lily-polaroids-3" class="page-label">3</label>
+
+      <div class="page-label-nav">
+
+        <label for="lily-polaroids-1">1</label>
+        <label for="lily-polaroids-2">2</label>
+        <label for="lily-polaroids-3">3</label>
+
+      </div>
+
+      <label for="view-lily-polaroids" class="close-polaroids">Close Polaroids</label>
+
+      <div class="book left-page">
+
+        <img src="images/lily-polaroids-001.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/lily-polaroids-002.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/lily-polaroids-003.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/lily-polaroids-004.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/lily-polaroids-005.jpg">
+
+      </div>
+
+    </div>
+
+    <!-- megan -->
+
+    <figure id="megan" class="model">
+
+      <figcaption>
+
+        <h2>Megan</h2>
+
+        <label for="view-megan-book" class="view-book">
+
+          View book
+
+        </label>
+
+        <label for="view-megan-polaroids" class="view-polaroids view-megan-polaroids">
+
+          View polaroids
+
+        </label>
+
+      </figcaption>
+
+      <img src="images/megan-001.jpg">
+
+      <figcaption>
+
+        <h3>Measurements</h3>
+
+        <p>
+
+          Height <strong>5'9.5" | 176.5cm</strong>
+
+          <br>
+
+          Bust <strong>34" | 86cm</strong>
+
+          <br>
+
+          Waist <strong>25" | 63.5cm</strong>
+
+          <br>
+
+          Hip <strong>35" | 89cm</strong>
+
+          <br>
+
+          Dress <strong>2 | 34</strong>
+
+          <br>
+
+          Shoe <strong>9 | 40</strong>
+
+          <br>
+
+          Hair <strong>Auburn </strong>
+
+          <br>
+
+          Eyes <strong>Hazel  | Noisetier</strong>
+
+        </p>
+
+      </figcaption>
+
+    </figure>
+
+    <input type="checkbox" id="view-megan-book">
+
+    <input type="radio" name="megan-pages" id="megan-page-1" checked>
+    <input type="radio" name="megan-pages" id="megan-page-2">
+    <input type="radio" name="megan-pages" id="megan-page-3">
+    <input type="radio" name="megan-pages" id="megan-page-4">
+    <input type="radio" name="megan-pages" id="megan-page-5">
+    <input type="radio" name="megan-pages" id="megan-page-6">
+
+    <div id="megan-book" class="two">
+
+      <label for="megan-page-1" class="page-label">1</label>
+      <label for="megan-page-2" class="page-label">2</label>
+      <label for="megan-page-3" class="page-label">3</label>
+      <label for="megan-page-4" class="page-label">4</label>
+      <label for="megan-page-5" class="page-label">5</label>
+      <label for="megan-page-6" class="page-label">6</label>
+
+      <div class="page-label-nav">
+
+        <label for="megan-page-1">1</label>
+        <label for="megan-page-2">2</label>
+        <label for="megan-page-3">3</label>
+        <label for="megan-page-4">4</label>
+        <label for="megan-page-5">5</label>
+        <label for="megan-page-6">6</label>
+
+      </div>
+
+      <label for="view-megan-book" class="close-book">Close book</label>
+
+      <div class="book full-spread">
+
+        <img src="images/megan-002.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/megan-003.jpg">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/megan-004.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/megan-005.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/megan-006.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/megan-007.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/megan-008.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/megan-009.jpg">
+
+      </div>
+
+    </div>
+
+    <input type="checkbox" id="view-megan-polaroids">
+
+    <input type="radio" name="megan-polaroids" id="megan-polaroids-1" checked>
+    <input type="radio" name="megan-polaroids" id="megan-polaroids-2">
+
+    <div id="megan-polaroids" class="three">
+
+      <label for="megan-polaroids-1" class="page-label">1</label>
+      <label for="megan-polaroids-2" class="page-label">2</label>
+
+      <div class="page-label-nav">
+
+        <label for="megan-polaroids-1">1</label>
+        <label for="megan-polaroids-2">2</label>
+
+      </div>
+
+      <label for="view-megan-polaroids" class="close-polaroids">Close Polaroids</label>
+
+      <div class="book left-page">
+
+        <img src="images/megan-polaroids-001.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/megan-polaroids-002.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/megan-polaroids-003.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/megan-polaroids-004.jpg">
+
+      </div>
+
+    </div>
+
+    <!-- miriam -->
+
+    <figure id="miriam" class="model">
+
+      <figcaption>
+
+        <h2>Miriam</h2>
+
+        <label for="view-miriam-book" class="view-book">
+
+          View book
+
+        </label>
+
+        <label for="view-miriam-polaroids" class="view-polaroids view-miriam-polaroids">
+
+          View polaroids
+
+        </label>
+
+      </figcaption>
+
+      <img src="images/miriam-001.png">
+
+      <figcaption>
+
+        <h3>Measurements</h3>
+
+        <p>
+
+          Height <strong>5'9" | 175cm</strong>
+
+          <br>
+
+          Bust <strong>30" | 176cm</strong>
+
+          <br>
+
+          Waist <strong>24" | 61cm</strong>
+
+          <br>
+
+          Hip <strong>35" | 89cm</strong>
+
+          <br>
+
+          Dress <strong>2 | 34</strong>
+
+          <br>
+
+          Shoe <strong>8 | 39</strong>
+
+          <br>
+
+          Hair <strong>Blonde | Blond</strong>
+
+          <br>
+
+          Eyes <strong>Blue | Blue</strong>
+
+        </p>
+
+      </figcaption>
+
+    </figure>
+
+    <input type="checkbox" id="view-miriam-book">
+
+    <input type="radio" name="miriam-pages" id="miriam-page-1" checked>
+    <input type="radio" name="miriam-pages" id="miriam-page-2">
+    <input type="radio" name="miriam-pages" id="miriam-page-3">
+    <input type="radio" name="miriam-pages" id="miriam-page-4">
+    <input type="radio" name="miriam-pages" id="miriam-page-5">
+    <input type="radio" name="miriam-pages" id="miriam-page-6">
+    <input type="radio" name="miriam-pages" id="miriam-page-7">
+
+    <div id="miriam-book" class="two">
+
+      <label for="miriam-page-1" class="page-label">1</label>
+      <label for="miriam-page-2" class="page-label">2</label>
+      <label for="miriam-page-3" class="page-label">3</label>
+      <label for="miriam-page-4" class="page-label">4</label>
+      <label for="miriam-page-5" class="page-label">5</label>
+      <label for="miriam-page-6" class="page-label">6</label>
+      <label for="miriam-page-7" class="page-label">7</label>
+
+      <div class="page-label-nav">
+
+        <label for="miriam-page-1">1</label>
+        <label for="miriam-page-2">2</label>
+        <label for="miriam-page-3">3</label>
+        <label for="miriam-page-4">4</label>
+        <label for="miriam-page-5">5</label>
+        <label for="miriam-page-6">6</label>
+        <label for="miriam-page-7">7</label>
+
+      </div>
+
+      <label for="view-miriam-book" class="close-book">Close book</label>
+
+      <div class="book left-page">
+
+        <img src="images/miriam-002.png">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/miriam-003.png">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/miriam-004.png">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/miriam-005.png">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/miriam-006.png">
+
+      </div>
+
+      <div class="book full-spread">
+
+        <img src="images/miriam-007.png">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/miriam-008.png">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/miriam-009.png">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/miriam-010.png">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/miriam-011.png">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/miriam-012.png">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/miriam-013.png">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/miriam-014.png">
+
+      </div>
+
+    </div>
+
+    <input type="checkbox" id="view-miriam-polaroids">
+
+    <input type="radio" name="miriam-polaroids" id="miriam-polaroids-1" checked>
+    <input type="radio" name="miriam-polaroids" id="miriam-polaroids-2">
+    <input type="radio" name="miriam-polaroids" id="miriam-polaroids-3">
+    <input type="radio" name="miriam-polaroids" id="miriam-polaroids-4">
+
+    <div id="miriam-polaroids" class="three">
+
+      <label for="miriam-polaroids-1" class="page-label">1</label>
+      <label for="miriam-polaroids-2" class="page-label">2</label>
+      <label for="miriam-polaroids-3" class="page-label">3</label>
+      <label for="miriam-polaroids-4" class="page-label">4</label>
+
+      <div class="page-label-nav">
+
+        <label for="miriam-polaroids-1">1</label>
+        <label for="miriam-polaroids-2">2</label>
+        <label for="miriam-polaroids-3">3</label>
+        <label for="miriam-polaroids-4">4</label>
+
+      </div>
+
+      <label for="view-miriam-polaroids" class="close-polaroids">Close Polaroids</label>
+
+      <div class="book left-page">
+
+        <img src="images/miriam-polaroids-001.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/miriam-polaroids-002.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/miriam-polaroids-003.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/miriam-polaroids-004.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/miriam-polaroids-005.jpg">
+
+      </div>
+
+      <div class="book right-page">
+
+        <img src="images/miriam-polaroids-006.jpg">
+
+      </div>
+
+      <div class="book left-page">
+
+        <img src="images/miriam-polaroids-007.jpg">
+
+      </div>
+
+    </div>
+
+    <!--footer -->
+
+    <div class="footer">
+
+      <em>Freedom</em>
+
+      <br>
+
+      820 N. Fairfax West Hollywood, CA 90046
+
+      <br>
+
+      <a href="tel:2132613810">Ph: 213.261.3810</a>
+
+      <br>
+
+      <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#102;&#114;&#101;&#101;&#100;&#111;&#109;&#109;&#111;&#100;&#101;&#108;&#115;&#046;&#099;&#111;&#109;">&#105;&#110;&#102;&#111;&#064;&#102;&#114;&#101;&#101;&#100;&#111;&#109;&#109;&#111;&#100;&#101;&#108;&#115;&#046;&#099;&#111;&#109;</a>
+
+    </div>
+
+    <!--
+
+    <div id="browser">
+
+      Welcome to the development version of this website. Please use the latest version of Google Chrome.
+
+    </div>
+
+    -->
+
+    <script src="scripts/jquery-2.1.1.min.js"></script>
+
+    <script src="index.js "></script>
+
+  </body>
+
+</html>
