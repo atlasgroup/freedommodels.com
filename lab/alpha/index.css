@@ -1,6 +1,8 @@
 html {
 
-  font: 100 normal 16px / 22px 'Gotham' , 'Helvetica Neue' , sans-serif;
+  font: 100 normal 16px / 1.375 'Gotham SSm A' , 'Gotham SSm B' , 'Helvetica Neue' , 'Arial' , sans-serif;
+  webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
   text-align: center;
 
 }
@@ -11,10 +13,30 @@ body, h1, h2, h3, figure, p {
 
 }
 
-h1, h2, h3 {
+h1 {
 
-  font-weight: 100;
-  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 1.75rem;
+  font-weight: 400;
+
+}
+
+h2 {
+
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  font-size: .8rem;
+  font-weight: 300;
+
+}
+
+h3 {
+
+  text-transform: uppercase;
+  margin: 1.625rem 0;
+  font-weight: 300;
+  font-size: 2rem;
 
 }
 
@@ -64,11 +86,72 @@ header {
 
 main > nav {
 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
   -webkit-justify-content: center;
   -webkit-align-items: center;
-  display: -webkit-flex;
+
+  justify-content: center;
+  align-items: center;
+
   max-height: 75vw;
   height: 100vh;
+
+}
+
+main > nav > a {
+
+  box-shadow: 0 2px 5px 0 rgba( 0 , 0 , 0 , 0.26 ), 0 2px 10px 0 rgba( 0 , 0 , 0 , 0.16 );
+  overflow: hidden;
+  height: 36.25vh;
+  width: 24.167vh;
+  margin: 1.25vh;
+
+}
+
+main > nav > a > figure {
+
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+}
+
+main > nav > a > figure > figcaption {
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+
+  justify-content: center;
+  align-items: center;
+
+  background: rgba( 255 , 255 , 255 , 1 );
+  position: absolute;
+  height: 16.667%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+}
+
+main > nav > a > figure img {
+
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
 
 }
 
@@ -82,23 +165,45 @@ section > figure {
 
 }
 
+section > figure label {
+
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: .625rem;
+  line-height: 35px;
+  font-weight: 400;
+
+}
+
+section > figure label:nth-of-type(1) {
+
+  border: 1px solid #000;
+  margin: 1.375rem 0;
+  min-width: 115px;
+
+}
+
 section > figure img {
 
-  position: absolute;
-  max-height: 75%;
-  margin: auto;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0;
+  box-shadow: 0 2px 5px 0 rgba( 0 , 0 , 0 , 0.26 ), 0 2px 10px 0 rgba( 0 , 0 , 0 , 0.16 );
+  height: 81.25%;
 
 }
 
 section figcaption {
 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
   -webkit-justify-content: center;
   -webkit-flex-direction: column;
-  display: -webkit-flex;
+
+  justify-content: center;
+  flex-direction: column;
+
   position: absolute;
   height: 100%;
   width: 25%;
@@ -109,6 +214,9 @@ section figcaption {
 section figcaption:first-of-type {
 
   -webkit-align-items: flex-end;
+
+  align-items: flex-end;
+
   left: 0;
 
 }
@@ -116,7 +224,22 @@ section figcaption:first-of-type {
 section figcaption:last-of-type {
 
   -webkit-align-items: flex-start;
+
+  align-items: flex-start;
+
   right: 0;
+
+  font-weight: 600;
+  font-size: .7rem;
+
+}
+
+section figcaption:last-of-type > h4 {
+
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  font-size: .7rem;
 
 }
 
@@ -131,9 +254,11 @@ section input {
 aside {
 
   -webkit-transition: all .3s ease-in-out;
+
+  background: rgba( 245 , 245 , 245 , 1 );
   white-space: nowrap;
   position: relative;
-  overflow: scroll;
+  overflow: hidden;
   width: 100%;
   height: 0;
 
@@ -143,15 +268,21 @@ section input:nth-of-type( 1 ):checked ~ aside:nth-of-type( 1 ),
 section input:nth-of-type( 2 ):checked ~ aside:nth-of-type( 2 ),
 section input:nth-of-type( 3 ):checked ~ aside:nth-of-type( 3 ) {
 
-  max-height: 75vw;
+  max-height: 62.5vw;
   height: 100vh;
 
 }
 
 aside > label {
 
+  color: rgba( 0 , 0 , 0 , .5 );
+  text-transform: uppercase;
+  letter-spacing: .15em;
   position: absolute;
+  font-size: .625rem;
+  font-weight: 400;
   margin: auto;
+  top: 8.333vh;
   z-index: 1;
   right: 0;
   left: 0;
@@ -165,37 +296,44 @@ aside figure {
   vertical-align: top;
   position: relative;
   height: 100%;
+  width: 100%;
+
+}
+
+aside .right,
+aside .left {
+
   width: 50%;
 
 }
 
-.double {
+aside .right img,
+aside .left img {
 
-  width: 100%;
+  margin: 0.6125%;
+
+}
+
+aside .right img {
+
+  right: auto;
+
+}
+
+aside .left img {
+
+  left: auto;
 
 }
 
 aside img {
 
   position: absolute;
-  max-height: 75%;
+  height: 81.375%;
   margin: auto;
-  bottom: 0;
+  top: 12.5%;
   right: 0;
   left: 0;
-  top: 0;
-
-}
-
-.left img {
-
-  margin-right: 10%;
-
-}
-
-.right img {
-
-  margin-left: 10%;
 
 }
 
@@ -203,6 +341,9 @@ aside nav {
 
   position: absolute;
   bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
 
 }
 
@@ -254,14 +395,145 @@ aside input:nth-of-type( 8 ):checked ~ figure {
 
 }
 
+nav label:before {
+
+  webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-right: 2px solid rgba( 0 , 0 , 0 , .5 );
+  border-top: 2px solid rgba( 0 , 0 , 0 , .5 );
+  position: absolute;
+  height: 35px;
+  right: 35px;
+  content: '';
+  width: 35px;
+  top: 40%;
+
+}
+
+nav label {
+
+  position: absolute;
+  display: none;
+  height: 100%;
+  font-size: 0;
+
+}
+
+aside input:nth-of-type( 1 ):checked ~ nav label:nth-of-type(2),
+aside input:nth-of-type( 2 ):checked ~ nav label:nth-of-type(1),
+aside input:nth-of-type( 2 ):checked ~ nav label:nth-of-type(3),
+aside input:nth-of-type( 3 ):checked ~ nav label:nth-of-type(2),
+aside input:nth-of-type( 3 ):checked ~ nav label:nth-of-type(4),
+aside input:nth-of-type( 4 ):checked ~ nav label:nth-of-type(3),
+aside input:nth-of-type( 4 ):checked ~ nav label:nth-of-type(5),
+aside input:nth-of-type( 5 ):checked ~ nav label:nth-of-type(4),
+aside input:nth-of-type( 5 ):checked ~ nav label:nth-of-type(6),
+aside input:nth-of-type( 6 ):checked ~ nav label:nth-of-type(5),
+aside input:nth-of-type( 6 ):checked ~ nav label:nth-of-type(7),
+aside input:nth-of-type( 7 ):checked ~ nav label:nth-of-type(6),
+aside input:nth-of-type( 7 ):checked ~ nav label:nth-of-type(8),
+aside input:nth-of-type( 8 ):checked ~ nav label:nth-of-type(7)
+aside input:nth-of-type( 8 ):checked ~ nav label:nth-of-type(9) {
+
+  display: block;
+
+}
+
+/* prev */
+
+aside input:nth-of-type( 2 ):checked ~ nav label:nth-of-type(1),
+aside input:nth-of-type( 3 ):checked ~ nav label:nth-of-type(2),
+aside input:nth-of-type( 4 ):checked ~ nav label:nth-of-type(3),
+aside input:nth-of-type( 5 ):checked ~ nav label:nth-of-type(4),
+aside input:nth-of-type( 6 ):checked ~ nav label:nth-of-type(5),
+aside input:nth-of-type( 7 ):checked ~ nav label:nth-of-type(6),
+aside input:nth-of-type( 8 ):checked ~ nav label:nth-of-type(7),
+aside input:nth-of-type( 9 ):checked ~ nav label:nth-of-type(8) {
+
+  left: 0;
+
+}
+
+aside input:nth-of-type( 2 ):checked ~ nav label:nth-of-type(1):before,
+aside input:nth-of-type( 3 ):checked ~ nav label:nth-of-type(2):before,
+aside input:nth-of-type( 4 ):checked ~ nav label:nth-of-type(3):before,
+aside input:nth-of-type( 5 ):checked ~ nav label:nth-of-type(4):before,
+aside input:nth-of-type( 6 ):checked ~ nav label:nth-of-type(5):before,
+aside input:nth-of-type( 7 ):checked ~ nav label:nth-of-type(6):before,
+aside input:nth-of-type( 8 ):checked ~ nav label:nth-of-type(7):before,
+aside input:nth-of-type( 9 ):checked ~ nav label:nth-of-type(8):before {
+
+  webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  right: auto;
+  left: 35px;
+
+}
+
+
+/* next */
+
+aside input:nth-of-type( 1 ):checked ~ nav label:nth-of-type(2),
+aside input:nth-of-type( 2 ):checked ~ nav label:nth-of-type(3),
+aside input:nth-of-type( 3 ):checked ~ nav label:nth-of-type(4),
+aside input:nth-of-type( 4 ):checked ~ nav label:nth-of-type(5),
+aside input:nth-of-type( 5 ):checked ~ nav label:nth-of-type(6),
+aside input:nth-of-type( 6 ):checked ~ nav label:nth-of-type(7),
+aside input:nth-of-type( 7 ):checked ~ nav label:nth-of-type(8),
+aside input:nth-of-type( 8 ):checked ~ nav label:nth-of-type(9) {
+
+  right: 0;
+
+}
+
+
 /* Footer */
 
 footer {
 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-direction: column;
   -webkit-justify-content: center;
   -webkit-align-items: center;
-  display: -webkit-flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   max-height: 75vw;
   height: 100vh;
+
+  background: #ffffff;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 );
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f5f5));
+  background: -moz-linear-gradient(top, #ffffff,#f5f5f5);
+  background: -o-linear-gradient(top, #ffffff,#f5f5f5);
+  background: -ms-linear-gradient(top, #ffffff,#f5f5f5);
+  background: linear-gradient(to bottom, #ffffff,#f5f5f5);
+
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: .625rem;
+  line-height: 2.25;
+  font-weight: 300;
+
+}
+
+footer em {
+
+  letter-spacing: 0.25em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: .9rem;
 
 }
