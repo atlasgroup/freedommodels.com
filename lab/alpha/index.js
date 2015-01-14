@@ -62,49 +62,53 @@ function scrollToY(scrollTargetY, speed, easing) {
     tick();
 }
 
-window.addEventListener( 'scroll' , function() {
+window.onload = function() {
 
-  /* Sticky */
+  window.addEventListener( 'scroll' , function() {
 
-  if( document.querySelector( 'html' ).classList.hasClass( 'no-csspositionsticky' ) ) {
+    /* Sticky */
 
-    var menu = document.getElementsByTagName( 'header' )[ 0 ];
+    if( document.getElementsByTagName( 'html' )[ 0 ].classList.contains( 'no-csspositionsticky' ) ) {
 
-    var offset = window.innerHeight / 20;
+      var menu = document.getElementsByTagName( 'header' )[ 0 ];
 
-    offset <= window.scrollY ? menu.classList.add( 'sticky' ) : menu.classList.remove( 'sticky' );
+      var offset = window.innerHeight / 20;
 
-  }
+      offset <= window.scrollY ? menu.classList.add( 'sticky' ) : menu.classList.remove( 'sticky' );
 
-  /* Parallax */
+    }
 
-  if( window.innerWidth > window.innerHeight ) {
+    /* Parallax */
 
-    var models = document.getElementsByTagName( 'section' );
+    if( window.innerWidth > window.innerHeight ) {
 
-    for( var index = 0 ; index < models.length ; index++ ) {
+      var models = document.getElementsByTagName( 'section' );
 
-      if( window.scrollY >= models[ index ].offsetTop - window.innerHeight && window.scrollY <= models[ index ].offsetTop + window.innerHeight ) {
+      for( var index = 0 ; index < models.length ; index++ ) {
 
-        var image = models[ index ].getElementsByTagName( 'img' )[ 0 ];
+        if( window.scrollY >= models[ index ].offsetTop - window.innerHeight && window.scrollY <= models[ index ].offsetTop + window.innerHeight ) {
 
-        var delta = models[ index ].offsetTop - window.scrollY;
+          var image = models[ index ].getElementsByTagName( 'img' )[ 0 ];
 
-        image.style.webkitTransform = 'translateY( ' + delta / 2 + 'px )';
+          var delta = models[ index ].offsetTop - window.scrollY;
 
-        image.style.mozTransform = 'translateY( ' + delta / 2 + 'px )';
+          image.style.webkitTransform = 'translateY( ' + delta / 2 + 'px )';
 
-        image.style.msTransform = 'translateY( ' + delta / 2 + 'px )';
+          image.style.mozTransform = 'translateY( ' + delta / 2 + 'px )';
 
-        image.style.transform = 'translateY( ' + delta / 2 + 'px )';
+          image.style.msTransform = 'translateY( ' + delta / 2 + 'px )';
+
+          image.style.transform = 'translateY( ' + delta / 2 + 'px )';
+
+        }
 
       }
 
     }
 
-  }
+  });
 
-});
+};
 
 angular
 

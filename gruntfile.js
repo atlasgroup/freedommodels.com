@@ -25,6 +25,13 @@ module.exports = function( grunt ) {
         cwd : 'public/',
         src : '**'
 
+      },
+
+      lab : {
+
+        cwd : 'lab/',
+        src : '**'
+
       }
 
     }

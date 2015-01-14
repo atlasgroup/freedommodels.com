@@ -115,11 +115,7 @@ main > nav {
   align-items: center;
   flex-wrap: wrap;
 
-  min-height: 75vh;
-
-/*
-  margin: 15.417vh 12.5vw 7.083vh 12.5vw;
-  min-height: 77.5vh;*/
+  min-height: 91.667vh;
 
 }
 
@@ -189,6 +185,7 @@ section > figure label {
 
   text-transform: uppercase;
   letter-spacing: .15em;
+  margin-right: .5rem;
   font-size: .625rem;
   line-height: 35px;
   font-weight: 400;
@@ -256,6 +253,7 @@ section figcaption:last-of-type > h4 {
 
   text-transform: uppercase;
   letter-spacing: 0.15em;
+  margin-left: .5rem;
   font-weight: 400;
   font-size: .7rem;
 
@@ -269,9 +267,9 @@ section input {
 
 section dl {
 
+  margin: 0 0 0 .5rem;
   font-size: 0;
   padding: 0;
-  margin: 0;
 
 }
 
@@ -333,7 +331,7 @@ aside > label {
   font-size: .625rem;
   font-weight: 400;
   margin: auto;
-  top: 8.333vh;
+  top: 8.333%;
   z-index: 1;
   right: 0;
   left: 0;
@@ -388,190 +386,120 @@ aside img {
 
 }
 
-aside nav {
+/* Dot navigation */
+
+aside nav:first-of-type {
 
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-  top: 0;
 
 }
 
-aside input:nth-of-type( 1 ):checked ~ figure {
+aside nav:first-of-type label:nth-of-type( 1 ) {
 
-  -webkit-transform: none;
-
-}
-
-aside input:nth-of-type( 2 ):checked ~ figure {
-
-  -webkit-transform: translateX( -100vw );
+  font-weight: bold;
 
 }
 
-aside input:nth-of-type( 3 ):checked ~ figure {
+aside input:checked ~ nav:first-of-type label {
 
-  -webkit-transform: translateX( -200vw );
-
-}
-
-aside input:nth-of-type( 4 ):checked ~ figure {
-
-  -webkit-transform: translateX( -300vw );
+  font-weight: 100;
 
 }
 
-aside input:nth-of-type( 5 ):checked ~ figure {
+aside input:nth-of-type( 1 ):checked ~ nav:first-of-type label:nth-of-type( 1 ),
+aside input:nth-of-type( 2 ):checked ~ nav:first-of-type label:nth-of-type( 2 ),
+aside input:nth-of-type( 3 ):checked ~ nav:first-of-type label:nth-of-type( 3 ),
+aside input:nth-of-type( 4 ):checked ~ nav:first-of-type label:nth-of-type( 4 ),
+aside input:nth-of-type( 5 ):checked ~ nav:first-of-type label:nth-of-type( 5 ) {
 
-  -webkit-transform: translateX( -400vw );
-
-}
-
-aside input:nth-of-type( 6 ):checked ~ figure {
-
-  -webkit-transform: translateX( -500vw );
+  font-weight: bold;
 
 }
 
-aside input:nth-of-type( 7 ):checked ~ figure {
+/* Arrow navigation */
 
-  -webkit-transform: translateX( -600vw );
+aside nav:last-of-type {
 
-}
+  background: rgba( 255 , 0 , 255 , 0.1 );
 
-aside input:nth-of-type( 8 ):checked ~ figure {
-
-  -webkit-transform: translateX( -700vw );
-
-}
-
-nav label:before {
-
-  webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  border-right: 2px solid rgba( 0 , 0 , 0 , .5 );
-  border-top: 2px solid rgba( 0 , 0 , 0 , .5 );
   position: absolute;
-  height: 35px;
-  right: 35px;
-  content: '';
-  width: 35px;
-  top: 40%;
+  height: 81.375%;
+  width: 100%;
+  top: 12.5%;
 
 }
 
-nav label {
+aside nav:last-of-type label {
+
+  background: rgba( 0 , 255 , 255 , 0.5 );
 
   position: absolute;
   display: none;
   height: 100%;
-  font-size: 0;
+  right: auto;
+  left: auto;
+  width: 50%;
+  top: 0;
 
 }
 
-aside input:nth-of-type( 1 ):checked ~ nav label:nth-of-type( 2 ),
-aside input:nth-of-type( 2 ):checked ~ nav label:nth-of-type( 1 ),
-aside input:nth-of-type( 2 ):checked ~ nav label:nth-of-type( 3 ),
-aside input:nth-of-type( 3 ):checked ~ nav label:nth-of-type( 2 ),
-aside input:nth-of-type( 3 ):checked ~ nav label:nth-of-type( 4 ),
-aside input:nth-of-type( 4 ):checked ~ nav label:nth-of-type( 3 ),
-aside input:nth-of-type( 4 ):checked ~ nav label:nth-of-type( 5 ),
-aside input:nth-of-type( 5 ):checked ~ nav label:nth-of-type( 4 ),
-aside input:nth-of-type( 5 ):checked ~ nav label:nth-of-type( 6 ),
-aside input:nth-of-type( 6 ):checked ~ nav label:nth-of-type( 5 ),
-aside input:nth-of-type( 6 ):checked ~ nav label:nth-of-type( 7 ),
-aside input:nth-of-type( 7 ):checked ~ nav label:nth-of-type( 6 ),
-aside input:nth-of-type( 7 ):checked ~ nav label:nth-of-type( 8 ),
-aside input:nth-of-type( 8 ):checked ~ nav label:nth-of-type( 7 ),
-aside input:nth-of-type( 8 ):checked ~ nav label:nth-of-type( 9 ) {
+aside nav:last-of-type label:nth-of-type( 2 ) {
 
   display: block;
-
-}
-
-/* prev */
-
-aside input:nth-of-type( 2 ):checked ~ nav label:nth-of-type( 1 ),
-aside input:nth-of-type( 3 ):checked ~ nav label:nth-of-type( 2 ),
-aside input:nth-of-type( 4 ):checked ~ nav label:nth-of-type( 3 ),
-aside input:nth-of-type( 5 ):checked ~ nav label:nth-of-type( 4 ),
-aside input:nth-of-type( 6 ):checked ~ nav label:nth-of-type( 5 ),
-aside input:nth-of-type( 7 ):checked ~ nav label:nth-of-type( 6 ),
-aside input:nth-of-type( 8 ):checked ~ nav label:nth-of-type( 7 ),
-aside input:nth-of-type( 9 ):checked ~ nav label:nth-of-type( 8 ) {
-
-  left: 0;
-
-}
-
-aside input:nth-of-type( 2 ):checked ~ nav label:nth-of-type( 1 ):before,
-aside input:nth-of-type( 3 ):checked ~ nav label:nth-of-type( 2 ):before,
-aside input:nth-of-type( 4 ):checked ~ nav label:nth-of-type( 3 ):before,
-aside input:nth-of-type( 5 ):checked ~ nav label:nth-of-type( 4 ):before,
-aside input:nth-of-type( 6 ):checked ~ nav label:nth-of-type( 5 ):before,
-aside input:nth-of-type( 7 ):checked ~ nav label:nth-of-type( 6 ):before,
-aside input:nth-of-type( 8 ):checked ~ nav label:nth-of-type( 7 ):before,
-aside input:nth-of-type( 9 ):checked ~ nav label:nth-of-type( 8 ):before {
-
-  webkit-transform: rotate(225deg);
-  -moz-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  -o-transform: rotate(225deg);
-  transform: rotate(225deg);
-  right: auto;
-  left: 35px;
-
-}
-
-
-/* next */
-
-aside input:nth-of-type( 1 ):checked ~ nav label:nth-of-type( 2 ),
-aside input:nth-of-type( 2 ):checked ~ nav label:nth-of-type( 3 ),
-aside input:nth-of-type( 3 ):checked ~ nav label:nth-of-type( 4 ),
-aside input:nth-of-type( 4 ):checked ~ nav label:nth-of-type( 5 ),
-aside input:nth-of-type( 5 ):checked ~ nav label:nth-of-type( 6 ),
-aside input:nth-of-type( 6 ):checked ~ nav label:nth-of-type( 7 ),
-aside input:nth-of-type( 7 ):checked ~ nav label:nth-of-type( 8 ),
-aside input:nth-of-type( 8 ):checked ~ nav label:nth-of-type( 9) {
-
   right: 0;
 
 }
 
+aside input:checked ~ nav:last-of-type label {
+
+  display: none;
+  right: auto;
+
+}
+
+aside input:nth-of-type( 1 ):checked ~ nav:last-of-type label:nth-of-type( 2 ),
+aside input:nth-of-type( 2 ):checked ~ nav:last-of-type label:nth-of-type( 3 ),
+aside input:nth-of-type( 3 ):checked ~ nav:last-of-type label:nth-of-type( 4 ),
+aside input:nth-of-type( 4 ):checked ~ nav:last-of-type label:nth-of-type( 5 ) {
+
+  display: block;
+  right: 0;
+
+}
+
+aside input:nth-of-type( 2 ):checked ~ nav:last-of-type label:nth-of-type( 1 ),
+aside input:nth-of-type( 3 ):checked ~ nav:last-of-type label:nth-of-type( 2 ),
+aside input:nth-of-type( 4 ):checked ~ nav:last-of-type label:nth-of-type( 3 ),
+aside input:nth-of-type( 5 ):checked ~ nav:last-of-type label:nth-of-type( 4 ) {
+
+  display: block;
+  left: 0;
+
+}
 
 /* Footer */
 
 footer {
 
-  display: -webkit-box;
   display: -moz-box;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
 
-  -webkit-flex-direction: column;
   -webkit-justify-content: center;
+  -webkit-flex-direction: column;
   -webkit-align-items: center;
 
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 
   max-height: 75vw;
   height: 100vh;
-
-  background: #ffffff;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 );
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f5f5));
-  background: -moz-linear-gradient(top, #ffffff,#f5f5f5);
-  background: -o-linear-gradient(top, #ffffff,#f5f5f5);
-  background: -ms-linear-gradient(top, #ffffff,#f5f5f5);
-  background: linear-gradient(to bottom, #ffffff,#f5f5f5);
 
   text-transform: uppercase;
   letter-spacing: .15em;
