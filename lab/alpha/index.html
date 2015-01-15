@@ -40,7 +40,7 @@
 
       <nav>
 
-        <a ng-href="#{{ model.url }}" ng-repeat="model in data.models">
+        <a ng-href="#{{ model.url }}" ng-repeat="model in data.models | orderBy : 'name'">
 
           <figure>
 
@@ -62,7 +62,7 @@
 
       </nav>
 
-      <section id="{{ model.url }}" ng-repeat="model in data.models">
+      <section id="{{ model.url }}" ng-repeat="model in data.models | orderBy : 'name'">
 
         <figure>
 
@@ -108,7 +108,7 @@
 
               <dt>
 
-                Chest
+                Bust
 
               </dt>
 
@@ -168,18 +168,6 @@
 
               <dt>
 
-                Eyes
-
-              </dt>
-
-              <dd>
-
-                {{ model.eyes }}
-
-              </dd>
-
-              <dt>
-
                 Hair
 
               </dt>
@@ -187,6 +175,18 @@
               <dd>
 
                 {{ model.hair }}
+
+              </dd>
+
+              <dt>
+
+                Eyes
+
+              </dt>
+
+              <dd>
+
+                {{ model.eyes }}
 
               </dd>
 
