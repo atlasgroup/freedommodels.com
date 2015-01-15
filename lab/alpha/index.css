@@ -65,6 +65,7 @@ main, span {
 
   position: absolute;
   margin-top: -11px;
+  display: block;
   width: 62.5%;
   left: 18.75%;
   top: 50%;
