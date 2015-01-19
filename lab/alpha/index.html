@@ -44,7 +44,7 @@
 
           <figure>
 
-            <img ng-src="{{ model.image.url }}">
+            <img ng-src="{{ 'https://s3-us-west-2.amazonaws.com/foureighty.freedommodels.com/' + model.image.url }}">
 
             <figcaption>
 
@@ -82,7 +82,7 @@
 
           </figcaption>
 
-          <img ng-src="{{ model.image.url }}">
+          <img ng-src="{{ 'https://s3-us-west-2.amazonaws.com/foureighty.freedommodels.com/' + model.image.url }}">
 
           <figcaption>
 
@@ -212,7 +212,7 @@
 
           <figure class="{{ image.class }}" ng-repeat="image in album.images">
 
-            <img ng-src="{{ image.url }}">
+            <img ng-src="{{ 'https://s3-us-west-2.amazonaws.com/foureighty.freedommodels.com/' + image.url }}">
 
           </figure>
 
