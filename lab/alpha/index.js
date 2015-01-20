@@ -63,12 +63,6 @@ function scrollToY(scrollTargetY, speed, easing) {
 }
 
 window.onload = function() {
-  
-  document.getElementsByTagName( 'h1' )[ 0 ].addEventListener( 'click' , function() {
-  
-    scrollToY( 0 );
-  
-  });
 
   window.addEventListener( 'scroll' , function() {
 
@@ -84,44 +78,9 @@ window.onload = function() {
 
     }
 
-    /* Parallax
-
-    if( window.innerWidth > window.innerHeight ) {
-
-      var models = document.getElementsByTagName( 'section' );
-
-      for( var index = 0 ; index < models.length ; index++ ) {
-
-        if( window.scrollY >= models[ index ].offsetTop - window.innerHeight && window.scrollY <= models[ index ].offsetTop + window.innerHeight ) {
-
-          var image = models[ index ].getElementsByTagName( 'img' )[ 0 ];
-
-          var delta = models[ index ].offsetTop - window.scrollY;
-
-          image.style.webkitTransform = 'translateY( ' + delta / 2 + 'px )';
-
-          image.style.mozTransform = 'translateY( ' + delta / 2 + 'px )';
-
-          image.style.msTransform = 'translateY( ' + delta / 2 + 'px )';
-
-          image.style.transform = 'translateY( ' + delta / 2 + 'px )';
-
-        }
-
-      }
-
-    }
-    
-    */
-
   });
 
 };
-
-
-
-
-
 
 /* Parallax */
 

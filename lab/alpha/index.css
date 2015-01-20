@@ -1,7 +1,7 @@
 html {
 
   font: 100 normal 16px / 1.375 'Gotham SSm A' , 'Gotham SSm B' , 'Helvetica Neue' , 'Arial' , sans-serif;
-  webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision;
   text-align: center;
 
@@ -100,6 +100,7 @@ header {
 
 .sticky + nav {
 
+  padding-top: -webkit-calc( 8.333vh + 22px );
   padding-top: calc( 8.333vh + 22px );
 
 }
@@ -125,6 +126,7 @@ main > nav {
   flex-wrap: wrap;
 
   margin: 15vh 12.5vw 7.5vh 12.5vw;
+  margin-top: -webkit-calc( 7.084vh - 22px );
   margin-top: calc( 7.084vh - 22px );
 
   min-height: 75vh;
@@ -353,6 +355,7 @@ aside > label {
 aside figure {
 
   -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
   display: inline-block;
   vertical-align: top;
   position: relative;
@@ -403,120 +406,140 @@ aside img {
 aside input:nth-of-type( 1 ):checked ~ figure {
 
   -webkit-transform: none;
+  transform: none;
 
 }
 
 aside input:nth-of-type( 2 ):checked ~ figure {
 
   -webkit-transform: translateX( -100% );
+  transform: translateX( -100% );
 
 }
 
 aside input:nth-of-type( 3 ):checked ~ figure {
 
   -webkit-transform: translateX( -200vw );
+  transform: translateX( -200vw );
 
 }
 
 aside input:nth-of-type( 4 ):checked ~ figure {
 
   -webkit-transform: translateX( -300vw );
+  transform: translateX( -300vw );
 
 }
 
 aside input:nth-of-type( 5 ):checked ~ figure {
 
   -webkit-transform: translateX( -400vw );
+  transform: translateX( -400vw );
 
 }
 
 aside input:nth-of-type( 6 ):checked ~ figure {
 
   -webkit-transform: translateX( -500vw );
+  transform: translateX( -500vw );
 
 }
 
 aside input:nth-of-type( 7 ):checked ~ figure {
 
   -webkit-transform: translateX( -600vw );
+  transform: translateX( -600vw );
 
 }
 
 aside input:nth-of-type( 8 ):checked ~ figure {
 
   -webkit-transform: translateX( -700vw );
+  transform: translateX( -700vw );
 
 }
 
 aside input:nth-of-type( 9 ):checked ~ figure {
 
   -webkit-transform: translateX( -800vw );
+  transform: translateX( -800vw );
 
 }
 
 aside input:nth-of-type( 10 ):checked ~ figure {
 
   -webkit-transform: translateX( -900vw );
+  transform: translateX( -900vw );
 
 }
 
 aside input:nth-of-type( 11 ):checked ~ figure {
 
   -webkit-transform: translateX( -1000vw );
+  transform: translateX( -1000vw );
 
 }
 
 aside input:nth-of-type( 12 ):checked ~ figure {
 
   -webkit-transform: translateX( -1100vw );
+  transform: translateX( -1100vw );
 
 }
 
 aside input:nth-of-type( 13 ):checked ~ figure {
 
   -webkit-transform: translateX( -1200vw );
+  transform: translateX( -1200vw );
 
 }
 
 aside input:nth-of-type( 14 ):checked ~ figure {
 
   -webkit-transform: translateX( -1300vw );
+  transform: translateX( -1300vw );
 
 }
 
 aside input:nth-of-type( 15 ):checked ~ figure {
 
   -webkit-transform: translateX( -1400vw );
+  transform: translateX( -1400vw );
 
 }
 
 aside input:nth-of-type( 16 ):checked ~ figure {
 
   -webkit-transform: translateX( -1500vw );
+  transform: translateX( -1500vw );
 
 }
 
 aside input:nth-of-type( 17 ):checked ~ figure {
 
   -webkit-transform: translateX( -1600vw );
+  transform: translateX( -1600vw );
 
 }
 
 aside input:nth-of-type( 18 ):checked ~ figure {
 
   -webkit-transform: translateX( -1700vw );
+  transform: translateX( -1700vw );
 
 }
 
 aside input:nth-of-type( 19 ):checked ~ figure {
 
   -webkit-transform: translateX( -1800vw );
+  transform: translateX( -1800vw );
 
 }
 
 aside input:nth-of-type( 20 ):checked ~ figure {
 
   -webkit-transform: translateX( -1900vw );
+  transform: translateX( -1900vw );
 
 }
 

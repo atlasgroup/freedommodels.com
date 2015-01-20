@@ -32,7 +32,7 @@
 
       <header>
 
-        <h1>
+        <h1 ng-click="scrollToY( 0 );">
 
           Freedom
 
@@ -42,7 +42,7 @@
 
       <nav>
 
-        <a ng-href="#{{ model.url }}" ng-repeat="model in data.models | orderBy : 'name'">
+        <a ng-href="#{{ model.url }}" ng-click="scroll( $event , model )" ng-repeat="model in data.models | orderBy : 'name'">
 
           <figure>
 

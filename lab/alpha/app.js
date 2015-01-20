@@ -210,4 +210,12 @@ angular
 
     };
 
+    $scope.scroll = function( event , model ) {
+
+      event.preventDefault();
+
+      scrollToY( document.getElementById( model.url ).offsetTop );
+
+    };
+
 });
