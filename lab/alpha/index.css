@@ -408,25 +408,115 @@ aside input:nth-of-type( 1 ):checked ~ figure {
 
 aside input:nth-of-type( 2 ):checked ~ figure {
 
-  -webkit-transform: -webkit-translateX( -100vw );
+  -webkit-transform: translateX( -100% );
 
 }
 
 aside input:nth-of-type( 3 ):checked ~ figure {
 
-  -webkit-transform: -webkit-translateX( -200vw );
+  -webkit-transform: translateX( -200vw );
 
 }
 
 aside input:nth-of-type( 4 ):checked ~ figure {
 
-  -webkit-transform: -webkit-translateX( -300vw );
+  -webkit-transform: translateX( -300vw );
 
 }
 
 aside input:nth-of-type( 5 ):checked ~ figure {
 
-  -webkit-transform: -webkit-translateX( -400vw );
+  -webkit-transform: translateX( -400vw );
+
+}
+
+aside input:nth-of-type( 6 ):checked ~ figure {
+
+  -webkit-transform: translateX( -500vw );
+
+}
+
+aside input:nth-of-type( 7 ):checked ~ figure {
+
+  -webkit-transform: translateX( -600vw );
+
+}
+
+aside input:nth-of-type( 8 ):checked ~ figure {
+
+  -webkit-transform: translateX( -700vw );
+
+}
+
+aside input:nth-of-type( 9 ):checked ~ figure {
+
+  -webkit-transform: translateX( -800vw );
+
+}
+
+aside input:nth-of-type( 10 ):checked ~ figure {
+
+  -webkit-transform: translateX( -900vw );
+
+}
+
+aside input:nth-of-type( 11 ):checked ~ figure {
+
+  -webkit-transform: translateX( -1000vw );
+
+}
+
+aside input:nth-of-type( 12 ):checked ~ figure {
+
+  -webkit-transform: translateX( -1100vw );
+
+}
+
+aside input:nth-of-type( 13 ):checked ~ figure {
+
+  -webkit-transform: translateX( -1200vw );
+
+}
+
+aside input:nth-of-type( 14 ):checked ~ figure {
+
+  -webkit-transform: translateX( -1300vw );
+
+}
+
+aside input:nth-of-type( 15 ):checked ~ figure {
+
+  -webkit-transform: translateX( -1400vw );
+
+}
+
+aside input:nth-of-type( 16 ):checked ~ figure {
+
+  -webkit-transform: translateX( -1500vw );
+
+}
+
+aside input:nth-of-type( 17 ):checked ~ figure {
+
+  -webkit-transform: translateX( -1600vw );
+
+}
+
+aside input:nth-of-type( 18 ):checked ~ figure {
+
+  -webkit-transform: translateX( -1700vw );
+
+}
+
+aside input:nth-of-type( 19 ):checked ~ figure {
+
+  -webkit-transform: translateX( -1800vw );
+
+}
+
+aside input:nth-of-type( 20 ):checked ~ figure {
+
+  -webkit-transform: translateX( -1900vw );
 
 }
 
@@ -481,7 +571,22 @@ aside input:nth-of-type( 1 ):checked ~ nav:first-of-type label:nth-of-type( 1 ),
 aside input:nth-of-type( 2 ):checked ~ nav:first-of-type label:nth-of-type( 2 ),
 aside input:nth-of-type( 3 ):checked ~ nav:first-of-type label:nth-of-type( 3 ),
 aside input:nth-of-type( 4 ):checked ~ nav:first-of-type label:nth-of-type( 4 ),
-aside input:nth-of-type( 5 ):checked ~ nav:first-of-type label:nth-of-type( 5 ) {
+aside input:nth-of-type( 5 ):checked ~ nav:first-of-type label:nth-of-type( 5 ),
+aside input:nth-of-type( 6 ):checked ~ nav:first-of-type label:nth-of-type( 6 ),
+aside input:nth-of-type( 7 ):checked ~ nav:first-of-type label:nth-of-type( 7 ),
+aside input:nth-of-type( 8 ):checked ~ nav:first-of-type label:nth-of-type( 8 ),
+aside input:nth-of-type( 9 ):checked ~ nav:first-of-type label:nth-of-type( 9 ),
+aside input:nth-of-type( 10 ):checked ~ nav:first-of-type label:nth-of-type( 10 ),
+aside input:nth-of-type( 11 ):checked ~ nav:first-of-type label:nth-of-type( 11 ),
+aside input:nth-of-type( 12 ):checked ~ nav:first-of-type label:nth-of-type( 12 ),
+aside input:nth-of-type( 13 ):checked ~ nav:first-of-type label:nth-of-type( 13 ),
+aside input:nth-of-type( 14 ):checked ~ nav:first-of-type label:nth-of-type( 14 ),
+aside input:nth-of-type( 15 ):checked ~ nav:first-of-type label:nth-of-type( 15 ),
+aside input:nth-of-type( 16 ):checked ~ nav:first-of-type label:nth-of-type( 16),
+aside input:nth-of-type( 17 ):checked ~ nav:first-of-type label:nth-of-type( 17 ),
+aside input:nth-of-type( 18 ):checked ~ nav:first-of-type label:nth-of-type( 18 ),
+aside input:nth-of-type( 19 ):checked ~ nav:first-of-type label:nth-of-type( 19 ),
+aside input:nth-of-type( 20 ):checked ~ nav:first-of-type label:nth-of-type( 20 ) {
 
   background: rgba( 0 , 0 , 0 , 1 );
 
@@ -550,7 +655,22 @@ aside input:checked ~ nav:last-of-type label {
 aside input:nth-of-type( 1 ):checked ~ nav:last-of-type label:nth-of-type( 2 ),
 aside input:nth-of-type( 2 ):checked ~ nav:last-of-type label:nth-of-type( 3 ),
 aside input:nth-of-type( 3 ):checked ~ nav:last-of-type label:nth-of-type( 4 ),
-aside input:nth-of-type( 4 ):checked ~ nav:last-of-type label:nth-of-type( 5 ) {
+aside input:nth-of-type( 4 ):checked ~ nav:last-of-type label:nth-of-type( 5 ),
+aside input:nth-of-type( 5 ):checked ~ nav:last-of-type label:nth-of-type( 6 ),
+aside input:nth-of-type( 6 ):checked ~ nav:last-of-type label:nth-of-type( 7 ),
+aside input:nth-of-type( 7 ):checked ~ nav:last-of-type label:nth-of-type( 8 ),
+aside input:nth-of-type( 8 ):checked ~ nav:last-of-type label:nth-of-type( 9 ),
+aside input:nth-of-type( 9 ):checked ~ nav:last-of-type label:nth-of-type( 10 ),
+aside input:nth-of-type( 10 ):checked ~ nav:last-of-type label:nth-of-type( 11 ),
+aside input:nth-of-type( 11 ):checked ~ nav:last-of-type label:nth-of-type( 12 ),
+aside input:nth-of-type( 12 ):checked ~ nav:last-of-type label:nth-of-type( 13 ),
+aside input:nth-of-type( 13 ):checked ~ nav:last-of-type label:nth-of-type( 14 ),
+aside input:nth-of-type( 14 ):checked ~ nav:last-of-type label:nth-of-type( 15 ),
+aside input:nth-of-type( 15 ):checked ~ nav:last-of-type label:nth-of-type( 16 ),
+aside input:nth-of-type( 16 ):checked ~ nav:last-of-type label:nth-of-type( 17 ),
+aside input:nth-of-type( 17 ):checked ~ nav:last-of-type label:nth-of-type( 18 ),
+aside input:nth-of-type( 18 ):checked ~ nav:last-of-type label:nth-of-type( 19 ),
+aside input:nth-of-type( 19 ):checked ~ nav:last-of-type label:nth-of-type( 20 ) {
 
   display: block;
   right: 0;
@@ -562,7 +682,22 @@ aside input:nth-of-type( 4 ):checked ~ nav:last-of-type label:nth-of-type( 5 ) {
 aside input:nth-of-type( 2 ):checked ~ nav:last-of-type label:nth-of-type( 1 ),
 aside input:nth-of-type( 3 ):checked ~ nav:last-of-type label:nth-of-type( 2 ),
 aside input:nth-of-type( 4 ):checked ~ nav:last-of-type label:nth-of-type( 3 ),
-aside input:nth-of-type( 5 ):checked ~ nav:last-of-type label:nth-of-type( 4 ) {
+aside input:nth-of-type( 5 ):checked ~ nav:last-of-type label:nth-of-type( 4 ),
+aside input:nth-of-type( 6 ):checked ~ nav:last-of-type label:nth-of-type( 5 ),
+aside input:nth-of-type( 7 ):checked ~ nav:last-of-type label:nth-of-type( 6 ),
+aside input:nth-of-type( 8 ):checked ~ nav:last-of-type label:nth-of-type( 7 ),
+aside input:nth-of-type( 9 ):checked ~ nav:last-of-type label:nth-of-type( 8 ),
+aside input:nth-of-type( 10 ):checked ~ nav:last-of-type label:nth-of-type( 9 ),
+aside input:nth-of-type( 11 ):checked ~ nav:last-of-type label:nth-of-type( 10 ),
+aside input:nth-of-type( 12 ):checked ~ nav:last-of-type label:nth-of-type( 11 ),
+aside input:nth-of-type( 13 ):checked ~ nav:last-of-type label:nth-of-type( 12 ),
+aside input:nth-of-type( 14 ):checked ~ nav:last-of-type label:nth-of-type( 13 ),
+aside input:nth-of-type( 15 ):checked ~ nav:last-of-type label:nth-of-type( 14 ),
+aside input:nth-of-type( 16 ):checked ~ nav:last-of-type label:nth-of-type( 15 ),
+aside input:nth-of-type( 17 ):checked ~ nav:last-of-type label:nth-of-type( 16 ),
+aside input:nth-of-type( 18 ):checked ~ nav:last-of-type label:nth-of-type( 17 ),
+aside input:nth-of-type( 19 ):checked ~ nav:last-of-type label:nth-of-type( 18 ),
+aside input:nth-of-type( 20 ):checked ~ nav:last-of-type label:nth-of-type( 19 ) {
 
   display: block;
   left: 0;
@@ -572,7 +707,22 @@ aside input:nth-of-type( 5 ):checked ~ nav:last-of-type label:nth-of-type( 4 ) {
 aside input:nth-of-type( 2 ):checked ~ nav:last-of-type label:nth-of-type( 1 ):before,
 aside input:nth-of-type( 3 ):checked ~ nav:last-of-type label:nth-of-type( 2 ):before,
 aside input:nth-of-type( 4 ):checked ~ nav:last-of-type label:nth-of-type( 3 ):before,
-aside input:nth-of-type( 5 ):checked ~ nav:last-of-type label:nth-of-type( 4 ):before {
+aside input:nth-of-type( 5 ):checked ~ nav:last-of-type label:nth-of-type( 4 ):before,
+aside input:nth-of-type( 6 ):checked ~ nav:last-of-type label:nth-of-type( 5 ):before,
+aside input:nth-of-type( 7 ):checked ~ nav:last-of-type label:nth-of-type( 6 ):before,
+aside input:nth-of-type( 8 ):checked ~ nav:last-of-type label:nth-of-type( 7 ):before,
+aside input:nth-of-type( 9 ):checked ~ nav:last-of-type label:nth-of-type( 8 ):before,
+aside input:nth-of-type( 10 ):checked ~ nav:last-of-type label:nth-of-type( 9 ):before,
+aside input:nth-of-type( 11 ):checked ~ nav:last-of-type label:nth-of-type( 10 ):before,
+aside input:nth-of-type( 12 ):checked ~ nav:last-of-type label:nth-of-type( 11 ):before,
+aside input:nth-of-type( 13 ):checked ~ nav:last-of-type label:nth-of-type( 12 ):before,
+aside input:nth-of-type( 14 ):checked ~ nav:last-of-type label:nth-of-type( 13 ):before,
+aside input:nth-of-type( 15 ):checked ~ nav:last-of-type label:nth-of-type( 14 ):before,
+aside input:nth-of-type( 16 ):checked ~ nav:last-of-type label:nth-of-type( 15 ):before,
+aside input:nth-of-type( 17 ):checked ~ nav:last-of-type label:nth-of-type( 16 ):before,
+aside input:nth-of-type( 18 ):checked ~ nav:last-of-type label:nth-of-type( 17 ):before,
+aside input:nth-of-type( 19 ):checked ~ nav:last-of-type label:nth-of-type( 18 ):before,
+aside input:nth-of-type( 20 ):checked ~ nav:last-of-type label:nth-of-type( 19 ):before {
 
   -webkit-transform: rotate(225deg);
   -moz-transform: rotate(225deg);
