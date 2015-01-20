@@ -22,6 +22,8 @@
 
     <script src="index.js"></script>
 
+    <script src="app.js"></script>
+
   </head>
 
   <body ng-controller="Controller">
@@ -62,7 +64,7 @@
 
       </nav>
 
-      <section id="{{ model.url }}" ng-repeat="model in data.models | orderBy : 'name'">
+      <section id="{{ model.url }}" class="parallax" ng-repeat="model in data.models | orderBy : 'name'">
 
         <figure>
 
@@ -76,7 +78,7 @@
 
             <label for="{{ model.url }}-{{ album.url }}" ng-click="open( model.url , album.url )" ng-repeat="album in model.albums">
 
-              {{ album.name }}
+              View {{ album.name }}
 
             </label>
 
@@ -114,7 +116,7 @@
 
               <dd>
 
-                {{ model.chest }}
+                {{ model.bust }}
 
               </dd>
 
@@ -186,7 +188,7 @@
 
               <dd>
 
-                {{ model.eyes }}
+                {{ model.eye }}
 
               </dd>
 

@@ -19,6 +19,7 @@ h1 {
   letter-spacing: 0.25em;
   font-size: 1.75rem;
   font-weight: 400;
+  cursor: pointer;
 
 }
 
@@ -35,6 +36,7 @@ h3 {
 
   margin: 1.625rem .5rem 1.625rem 0;
   text-transform: uppercase;
+  text-align: right;
   font-weight: 300;
   font-size: 2rem;
 
