@@ -1,99 +1,131 @@
-$('.view-book').click( function() {
+// first add raf shim
+// http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
+window.requestAnimFrame = (function(){
+  return  window.requestAnimationFrame       ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame    ||
+          function( callback ){
+            window.setTimeout(callback, 1000 / 60);
+          };
+})();
 
-  $( 'html, body' ).animate({ scrollTop : $( this ).parent()[ 0 ].offsetTop + $( this ).parent()[ 0 ].offsetHeight } , 600 );
+// main function
+function scrollToY(scrollTargetY, speed, easing) {
+    // scrollTargetY: the target scrollY property of the window
+    // speed: time in pixels per second
+    // easing: easing equation to use
 
-});
+    var scrollY = window.scrollY,
+        scrollTargetY = scrollTargetY || 0,
+        speed = speed || 2000,
+        easing = easing || 'easeOutSine',
+        currentTime = 0;
 
-$('.view-miriam-polaroids').click( function() {
+    // min time .1, max time .8 seconds
+    var time = Math.max(.1, Math.min(Math.abs(scrollY - scrollTargetY) / speed, .8));
 
-  $( 'html, body' ).animate({ scrollTop : $( this ).parent()[ 0 ].offsetTop + $( this ).parent()[ 0 ].offsetHeight } , 600 );
+    // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
+    var PI_D2 = Math.PI / 2,
+        easingEquations = {
+            easeOutSine: function (pos) {
+                return Math.sin(pos * (Math.PI / 2));
+            },
+            easeInOutSine: function (pos) {
+                return (-0.5 * (Math.cos(Math.PI * pos) - 1));
+            },
+            easeInOutQuint: function (pos) {
+                if ((pos /= 0.5) < 1) {
+                    return 0.5 * Math.pow(pos, 5);
+                }
+                return 0.5 * (Math.pow((pos - 2), 5) + 2);
+            }
+        };
 
-});
+    // add animation loop
+    function tick() {
+        currentTime += 1 / 60;
 
-$('.view-kota-polaroids').click( function() {
+        var p = currentTime / time;
+        var t = easingEquations[easing](p);
 
-  $( 'html, body' ).animate({ scrollTop : $( this ).parent()[ 0 ].offsetTop + $( this ).parent()[ 0 ].offsetHeight } , 600 );
+        if (p < 1) {
+            requestAnimFrame(tick);
 
-});
+            window.scrollTo(0, scrollY + ((scrollTargetY - scrollY) * t));
+        } else {
+            console.log('scroll done');
+            window.scrollTo(0, scrollTargetY);
+        }
+    }
 
-$('.view-lily-polaroids').click( function() {
+    // call it once to get started
+    tick();
+}
 
-  $( 'html, body' ).animate({ scrollTop : $( this ).parent()[ 0 ].offsetTop + $( this ).parent()[ 0 ].offsetHeight } , 600 );
+window.onload = function() {
 
-});
+  window.addEventListener( 'scroll' , function() {
 
-$('.view-megan-polaroids').click( function() {
+    /* Sticky */
 
-  $( 'html, body' ).animate({ scrollTop : $( this ).parent()[ 0 ].offsetTop + $( this ).parent()[ 0 ].offsetHeight } , 600 );
+    if( document.getElementsByTagName( 'html' )[ 0 ].classList.contains( 'no-csspositionsticky' ) ) {
 
-});
+      var menu = document.getElementsByTagName( 'header' )[ 0 ];
 
-/* Close */
+      var offset = window.innerHeight / 20;
 
-$( '.close-book , .close-polaroids' ).click( function( event ) {
+      offset <= window.scrollY ? menu.classList.add( 'sticky' ) : menu.classList.remove( 'sticky' );
 
-  event.preventDefault();
-
-  $( 'html, body' ).animate({ scrollTop : $( this ).parent().prevAll( '.model' )[ 0 ].offsetTop } , 600 , function() {
-
-    document.getElementById( event.currentTarget.getAttribute( 'for' ) ).checked = false;
-
-    document.getElementById( event.currentTarget.getAttribute( 'for' ) ).nextElementSibling.checked = true;
+    }
 
   });
 
-});
+};
 
-/* Back to top on logo */
+/* Parallax */
 
-$( '.top-menu' ).click( function() {
+var elements, element, scroll;
 
-  $( 'html, body' ).animate( { scrollTop : 0 } , 600 , function() {
+function step() {
 
-    $( '.top-menu' ).removeClass( 'sticky' );
+  elements = document.querySelectorAll( '.parallax' );
 
-  });
+  scroll = window.scrollY;
 
-});
+  for( var index = 0; index < elements.length; index++ ) {
 
-/* Sticky & Parallax */
+    element = elements[ index ];
 
+    var top = element.offsetTop;
 
+    var height = element.offsetHeight;
 
-window.addEventListener( 'scroll' , function() {
+    var image = element.getElementsByTagName( 'img' )[ 0 ];
 
-  /* Sticky */
+    if( scroll > top - height && scroll < top + height ) {
 
-  var menu = document.querySelectorAll( '.top-menu' )[ 0 ];
+      var distance = top - scroll;
 
-  var offset = window.innerHeight / 20;
+      image.style.webkitTransform = 'translateY(' + distance + 'px)';
 
-  offset <= window.scrollY ? menu.classList.add( 'sticky' ) : menu.classList.remove( 'sticky' );
+    }
 
-  /* Parallax */
+    if( top > scroll + height ) {
 
-  var models = document.querySelectorAll( '.model' );
+      image.style.webkitTransform = 'translateY(' + height + 'px)';
 
-  for( var index = 0 ; index < models.length ; index++ ) {
+    }
 
-    if( window.scrollY >= models[ index ].offsetTop - window.innerHeight && window.scrollY <= models[ index ].offsetTop + window.innerHeight ) {
+    if( top + height < scroll ) {
 
-      console.log( 'scrolling' , models[ index ] );
-
-      var image = models[ index ].getElementsByTagName( 'img' )[ 0 ];
-
-      var delta = models[ index ].offsetTop - window.scrollY;
-
-      image.style.webkitTransform = 'translateY( ' + delta / 2 + 'px )';
-
-      image.style.mozTransform = 'translateY( ' + delta / 2 + 'px )';
-
-      image.style.msTransform = 'translateY( ' + delta / 2 + 'px )';
-
-      image.style.transform = 'translateY( ' + delta / 2 + 'px )';
+      image.style.webkitTransform = 'translateY(-' + height + 'px)';
 
     }
 
   }
 
-});
+  window.requestAnimationFrame( step );
+
+}
+
+window.requestAnimationFrame( step );

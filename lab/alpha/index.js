@@ -1,131 +1,99 @@
-// first add raf shim
-// http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
-window.requestAnimFrame = (function(){
-  return  window.requestAnimationFrame       ||
-          window.webkitRequestAnimationFrame ||
-          window.mozRequestAnimationFrame    ||
-          function( callback ){
-            window.setTimeout(callback, 1000 / 60);
-          };
-})();
+$('.view-book').click( function() {
 
-// main function
-function scrollToY(scrollTargetY, speed, easing) {
-    // scrollTargetY: the target scrollY property of the window
-    // speed: time in pixels per second
-    // easing: easing equation to use
+  $( 'html, body' ).animate({ scrollTop : $( this ).parent()[ 0 ].offsetTop + $( this ).parent()[ 0 ].offsetHeight } , 600 );
 
-    var scrollY = window.scrollY,
-        scrollTargetY = scrollTargetY || 0,
-        speed = speed || 2000,
-        easing = easing || 'easeOutSine',
-        currentTime = 0;
+});
 
-    // min time .1, max time .8 seconds
-    var time = Math.max(.1, Math.min(Math.abs(scrollY - scrollTargetY) / speed, .8));
+$('.view-miriam-polaroids').click( function() {
 
-    // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
-    var PI_D2 = Math.PI / 2,
-        easingEquations = {
-            easeOutSine: function (pos) {
-                return Math.sin(pos * (Math.PI / 2));
-            },
-            easeInOutSine: function (pos) {
-                return (-0.5 * (Math.cos(Math.PI * pos) - 1));
-            },
-            easeInOutQuint: function (pos) {
-                if ((pos /= 0.5) < 1) {
-                    return 0.5 * Math.pow(pos, 5);
-                }
-                return 0.5 * (Math.pow((pos - 2), 5) + 2);
-            }
-        };
+  $( 'html, body' ).animate({ scrollTop : $( this ).parent()[ 0 ].offsetTop + $( this ).parent()[ 0 ].offsetHeight } , 600 );
 
-    // add animation loop
-    function tick() {
-        currentTime += 1 / 60;
+});
 
-        var p = currentTime / time;
-        var t = easingEquations[easing](p);
+$('.view-kota-polaroids').click( function() {
 
-        if (p < 1) {
-            requestAnimFrame(tick);
+  $( 'html, body' ).animate({ scrollTop : $( this ).parent()[ 0 ].offsetTop + $( this ).parent()[ 0 ].offsetHeight } , 600 );
 
-            window.scrollTo(0, scrollY + ((scrollTargetY - scrollY) * t));
-        } else {
-            console.log('scroll done');
-            window.scrollTo(0, scrollTargetY);
-        }
-    }
+});
 
-    // call it once to get started
-    tick();
-}
+$('.view-lily-polaroids').click( function() {
 
-window.onload = function() {
+  $( 'html, body' ).animate({ scrollTop : $( this ).parent()[ 0 ].offsetTop + $( this ).parent()[ 0 ].offsetHeight } , 600 );
 
-  window.addEventListener( 'scroll' , function() {
+});
 
-    /* Sticky */
+$('.view-megan-polaroids').click( function() {
 
-    if( document.getElementsByTagName( 'html' )[ 0 ].classList.contains( 'no-csspositionsticky' ) ) {
+  $( 'html, body' ).animate({ scrollTop : $( this ).parent()[ 0 ].offsetTop + $( this ).parent()[ 0 ].offsetHeight } , 600 );
 
-      var menu = document.getElementsByTagName( 'header' )[ 0 ];
+});
 
-      var offset = window.innerHeight / 20;
+/* Close */
 
-      offset <= window.scrollY ? menu.classList.add( 'sticky' ) : menu.classList.remove( 'sticky' );
+$( '.close-book , .close-polaroids' ).click( function( event ) {
 
-    }
+  event.preventDefault();
+
+  $( 'html, body' ).animate({ scrollTop : $( this ).parent().prevAll( '.model' )[ 0 ].offsetTop } , 600 , function() {
+
+    document.getElementById( event.currentTarget.getAttribute( 'for' ) ).checked = false;
+
+    document.getElementById( event.currentTarget.getAttribute( 'for' ) ).nextElementSibling.checked = true;
 
   });
 
-};
+});
 
-/* Parallax */
+/* Back to top on logo */
 
-var elements, element, scroll;
+$( '.top-menu' ).click( function() {
 
-function step() {
-  
-  elements = document.querySelectorAll( '.parallax' );
-  
-  scroll = window.scrollY;
-  
-  for( var index = 0; index < elements.length; index++ ) {
-    
-    element = elements[ index ];
-    
-    var top = element.offsetTop;
-    
-    var height = element.offsetHeight;
-    
-    var image = element.getElementsByTagName( 'img' )[ 0 ];
-    
-    if( scroll > top - height && scroll < top + height ) {
-      
-      var distance = top - scroll;
-      
-      image.style.webkitTransform = 'translateY(' + distance + 'px)';
-    
+  $( 'html, body' ).animate( { scrollTop : 0 } , 600 , function() {
+
+    $( '.top-menu' ).removeClass( 'sticky' );
+
+  });
+
+});
+
+/* Sticky & Parallax */
+
+
+
+window.addEventListener( 'scroll' , function() {
+
+  /* Sticky */
+
+  var menu = document.querySelectorAll( '.top-menu' )[ 0 ];
+
+  var offset = window.innerHeight / 20;
+
+  offset <= window.scrollY ? menu.classList.add( 'sticky' ) : menu.classList.remove( 'sticky' );
+
+  /* Parallax */
+
+  var models = document.querySelectorAll( '.model' );
+
+  for( var index = 0 ; index < models.length ; index++ ) {
+
+    if( window.scrollY >= models[ index ].offsetTop - window.innerHeight && window.scrollY <= models[ index ].offsetTop + window.innerHeight ) {
+
+      console.log( 'scrolling' , models[ index ] );
+
+      var image = models[ index ].getElementsByTagName( 'img' )[ 0 ];
+
+      var delta = models[ index ].offsetTop - window.scrollY;
+
+      image.style.webkitTransform = 'translateY( ' + delta / 2 + 'px )';
+
+      image.style.mozTransform = 'translateY( ' + delta / 2 + 'px )';
+
+      image.style.msTransform = 'translateY( ' + delta / 2 + 'px )';
+
+      image.style.transform = 'translateY( ' + delta / 2 + 'px )';
+
     }
-    
-    if( top > scroll + height ) {
-    
-      image.style.webkitTransform = 'translateY(' + height + 'px)';
-    
-    }
-    
-    if( top + height < scroll ) {
-    
-      image.style.webkitTransform = 'translateY(-' + height + 'px)';
-    
-    }
-  
+
   }
-  
-  window.requestAnimationFrame( step );
-  
-}
 
-window.requestAnimationFrame( step );
+});
