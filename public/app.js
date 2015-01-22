@@ -214,7 +214,17 @@ angular
 
       event.preventDefault();
 
-      scrollToY( document.getElementById( model.url ).offsetTop );
+      window.history.pushState( null , 'any' , '#' + model.url );
+
+      if( model === 0 ) {
+
+        scrollToY( 0 );
+
+      } else {
+
+        scrollToY( document.getElementById( model.url ).offsetTop || 0 );
+
+      }
 
     };
 
