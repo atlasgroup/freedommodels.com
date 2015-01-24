@@ -42,7 +42,7 @@
 
       <nav>
 
-        <a ng-href="#{{ model.url }}" ng-click="scroll( $event , model )" ng-repeat="model in data.models | orderBy : 'name'">
+        <a ng-href="#{{ model.url }}" ng-click="scroll( $event , model )" ng-repeat="model in data.models | orderBy : 'name' | filter : { published : true }">
 
           <figure>
 
@@ -64,7 +64,7 @@
 
       </nav>
 
-      <section id="{{ model.url }}" class="parallax" ng-repeat="model in data.models | orderBy : 'name'">
+      <section id="{{ model.url }}" class="parallax" ng-repeat="model in data.models | orderBy : 'name' | filter : { published : true }">
 
         <figure>
 
