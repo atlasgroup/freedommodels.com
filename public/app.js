@@ -222,7 +222,7 @@ angular
 
       } else {
 
-        scrollToY( document.getElementById( model.url ).offsetTop || 0 );
+        scrollToY( document.getElementById( model.url ).offsetTop + ( document.getElementsByTagName( 'h1' )[ 0 ].offsetHeight / 2 ) || 0 );
 
       }
 
