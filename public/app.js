@@ -66,7 +66,9 @@ angular
 
         for( var model = 0; model < $scope.data.models.length; model++ ) {
 
-          for( var album = 0; album < $scope.data.models[ model ].albums.length; album++ ) {
+          if( $scope.data.models[ model ].albums && $scope.data.models[ model ].albums.length ) {
+
+            for( var album = 0; album < $scope.data.models[ model ].albums.length; album++ ) {
 
             for( var image = 0; image < $scope.data.models[ model ].albums[ album ].images.length; image++ ) {
 
@@ -116,11 +118,15 @@ angular
 
           }
 
+          }
+
         }
 
         for( var model = 0; model < $scope.data.models.length; model++ ) {
 
-          for( var album = 0; album < $scope.data.models[ model ].albums.length; album++ ) {
+          if( $scope.data.models[ model ].albums && $scope.data.models[ model ].albums.length ) {
+
+            for( var album = 0; album < $scope.data.models[ model ].albums.length; album++ ) {
 
             $scope.data.models[ model ].albums[ album ].pages = [];
 
@@ -136,6 +142,8 @@ angular
 
           }
 
+          }
+
         }
 
         $scope.$apply();
@@ -146,11 +154,15 @@ angular
 
       for( var model = 0; model < $scope.data.models.length; model++ ) {
 
-        for( var album = 0; album < $scope.data.models[ model ].albums.length; album++ ) {
+        if( $scope.data.models[ model ].albums && $scope.data.models[ model ].albums.length ) {
 
-          for( var image = 0; image < $scope.data.models[ model ].albums[ album].images.length; image++ ) {
+          for( var album = 0; album < $scope.data.models[ model ].albums.length; album++ ) {
 
-            images += 1;
+            for( var image = 0; image < $scope.data.models[ model ].albums[ album].images.length; image++ ) {
+
+              images += 1;
+
+            }
 
           }
 
@@ -160,7 +172,9 @@ angular
 
       for( var model = 0; model < $scope.data.models.length; model++ ) {
 
-        for( var album = 0; album < $scope.data.models[ model ].albums.length; album++ ) {
+        if( $scope.data.models[ model ].albums && $scope.data.models[ model ].albums.length ) {
+
+          for( var album = 0; album < $scope.data.models[ model ].albums.length; album++ ) {
 
           for( var image = 0; image < $scope.data.models[ model ].albums[ album].images.length; image++ ) {
 
@@ -189,6 +203,8 @@ angular
             i.src = 'https://s3-us-west-2.amazonaws.com/foureighty.freedommodels.com/' + $scope.data.models[ model ].albums[ album].images[ image ].url;
 
           }
+
+        }
 
         }
 
