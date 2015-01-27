@@ -307,6 +307,7 @@ section dl dt {
   clear: left;
 
 }
+
 section dl dd {
 
   font-weight: 600;
@@ -552,6 +553,146 @@ aside input:nth-of-type( 20 ):checked ~ div {
 
 }
 
+aside input:nth-of-type( 21 ):checked ~ div {
+
+  -webkit-transform: translate3d( -2000vw , 0 , 0 );
+  transform: translate3d( -2000vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 22 ):checked ~ div {
+
+  -webkit-transform: translate3d( -2100vw , 0 , 0 );
+  transform: translate3d( -2100vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 23 ):checked ~ div {
+
+  -webkit-transform: translate3d( -2200vw , 0 , 0 );
+  transform: translate3d( -2200vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 24 ):checked ~ div {
+
+  -webkit-transform: translate3d( -2300vw , 0 , 0 );
+  transform: translate3d( -2300vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 25 ):checked ~ div {
+
+  -webkit-transform: translate3d( -2400vw , 0 , 0 );
+  transform: translate3d( -2400vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 26 ):checked ~ div {
+
+  -webkit-transform: translate3d( -2500vw , 0 , 0 );
+  transform: translate3d( -2500vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 27 ):checked ~ div {
+
+  -webkit-transform: translate3d( -2600vw , 0 , 0 );
+  transform: translate3d( -2600vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 28 ):checked ~ div {
+
+  -webkit-transform: translate3d( -2700vw , 0 , 0 );
+  transform: translate3d( -2700vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 29 ):checked ~ div {
+
+  -webkit-transform: translate3d( -2800vw , 0 , 0 );
+  transform: translate3d( -2800vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 30 ):checked ~ div {
+
+  -webkit-transform: translate3d( -2900vw , 0 , 0 );
+  transform: translate3d( -2900vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 31 ):checked ~ div {
+
+  -webkit-transform: translate3d( -3000vw , 0 , 0 );
+  transform: translate3d( -3000vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 32 ):checked ~ div {
+
+  -webkit-transform: translate3d( -3100vw , 0 , 0 );
+  transform: translate3d( -3100vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 33 ):checked ~ div {
+
+  -webkit-transform: translate3d( -3200vw , 0 , 0 );
+  transform: translate3d( -3200vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 34 ):checked ~ div {
+
+  -webkit-transform: translate3d( -3300vw , 0 , 0 );
+  transform: translate3d( -3300vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 35 ):checked ~ div {
+
+  -webkit-transform: translate3d( -3400vw , 0 , 0 );
+  transform: translate3d( -3400vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 36 ):checked ~ div {
+
+  -webkit-transform: translate3d( -3500vw , 0 , 0 );
+  transform: translate3d( -3500vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 37 ):checked ~ div {
+
+  -webkit-transform: translate3d( -3600vw , 0 , 0 );
+  transform: translate3d( -3600vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 38 ):checked ~ div {
+
+  -webkit-transform: translate3d( -3700vw , 0 , 0 );
+  transform: translate3d( -3700vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 39 ):checked ~ div {
+
+  -webkit-transform: translate3d( -3800vw , 0 , 0 );
+  transform: translate3d( -3800vw , 0 , 0 );
+
+}
+
+aside input:nth-of-type( 40 ):checked ~ div {
+
+  -webkit-transform: translate3d( -3900vw , 0 , 0 );
+  transform: translate3d( -3900vw , 0 , 0 );
+
+}
+
 /* Dot navigation */
 
 aside nav:first-of-type {
@@ -618,7 +759,27 @@ aside input:nth-of-type( 16 ):checked ~ nav:first-of-type label:nth-of-type( 16)
 aside input:nth-of-type( 17 ):checked ~ nav:first-of-type label:nth-of-type( 17 ),
 aside input:nth-of-type( 18 ):checked ~ nav:first-of-type label:nth-of-type( 18 ),
 aside input:nth-of-type( 19 ):checked ~ nav:first-of-type label:nth-of-type( 19 ),
-aside input:nth-of-type( 20 ):checked ~ nav:first-of-type label:nth-of-type( 20 ) {
+aside input:nth-of-type( 20 ):checked ~ nav:first-of-type label:nth-of-type( 20 ),
+aside input:nth-of-type( 21 ):checked ~ nav:first-of-type label:nth-of-type( 21 ),
+aside input:nth-of-type( 22 ):checked ~ nav:first-of-type label:nth-of-type( 22 ),
+aside input:nth-of-type( 23 ):checked ~ nav:first-of-type label:nth-of-type( 23 ),
+aside input:nth-of-type( 24 ):checked ~ nav:first-of-type label:nth-of-type( 24 ),
+aside input:nth-of-type( 25 ):checked ~ nav:first-of-type label:nth-of-type( 25 ),
+aside input:nth-of-type( 26 ):checked ~ nav:first-of-type label:nth-of-type( 26 ),
+aside input:nth-of-type( 27 ):checked ~ nav:first-of-type label:nth-of-type( 27 ),
+aside input:nth-of-type( 28 ):checked ~ nav:first-of-type label:nth-of-type( 28 ),
+aside input:nth-of-type( 29 ):checked ~ nav:first-of-type label:nth-of-type( 29 ),
+aside input:nth-of-type( 30 ):checked ~ nav:first-of-type label:nth-of-type( 30 ),
+aside input:nth-of-type( 31 ):checked ~ nav:first-of-type label:nth-of-type( 31 ),
+aside input:nth-of-type( 32 ):checked ~ nav:first-of-type label:nth-of-type( 32 ),
+aside input:nth-of-type( 33 ):checked ~ nav:first-of-type label:nth-of-type( 33 ),
+aside input:nth-of-type( 34 ):checked ~ nav:first-of-type label:nth-of-type( 34 ),
+aside input:nth-of-type( 35 ):checked ~ nav:first-of-type label:nth-of-type( 35 ),
+aside input:nth-of-type( 36 ):checked ~ nav:first-of-type label:nth-of-type( 36 ),
+aside input:nth-of-type( 37 ):checked ~ nav:first-of-type label:nth-of-type( 37 ),
+aside input:nth-of-type( 38 ):checked ~ nav:first-of-type label:nth-of-type( 38 ),
+aside input:nth-of-type( 39 ):checked ~ nav:first-of-type label:nth-of-type( 39 ),
+aside input:nth-of-type( 40 ):checked ~ nav:first-of-type label:nth-of-type( 40 ) {
 
   background: rgba( 0 , 0 , 0 , 1 );
 
@@ -702,7 +863,27 @@ aside input:nth-of-type( 15 ):checked ~ nav:last-of-type label:nth-of-type( 16 )
 aside input:nth-of-type( 16 ):checked ~ nav:last-of-type label:nth-of-type( 17 ),
 aside input:nth-of-type( 17 ):checked ~ nav:last-of-type label:nth-of-type( 18 ),
 aside input:nth-of-type( 18 ):checked ~ nav:last-of-type label:nth-of-type( 19 ),
-aside input:nth-of-type( 19 ):checked ~ nav:last-of-type label:nth-of-type( 20 ) {
+aside input:nth-of-type( 19 ):checked ~ nav:last-of-type label:nth-of-type( 20 ),
+aside input:nth-of-type( 20 ):checked ~ nav:last-of-type label:nth-of-type( 21 ),
+aside input:nth-of-type( 21 ):checked ~ nav:last-of-type label:nth-of-type( 22 ),
+aside input:nth-of-type( 22 ):checked ~ nav:last-of-type label:nth-of-type( 23 ),
+aside input:nth-of-type( 23 ):checked ~ nav:last-of-type label:nth-of-type( 24 ),
+aside input:nth-of-type( 24 ):checked ~ nav:last-of-type label:nth-of-type( 25 ),
+aside input:nth-of-type( 25 ):checked ~ nav:last-of-type label:nth-of-type( 26 ),
+aside input:nth-of-type( 26 ):checked ~ nav:last-of-type label:nth-of-type( 27 ),
+aside input:nth-of-type( 27 ):checked ~ nav:last-of-type label:nth-of-type( 28 ),
+aside input:nth-of-type( 28 ):checked ~ nav:last-of-type label:nth-of-type( 29 ),
+aside input:nth-of-type( 29 ):checked ~ nav:last-of-type label:nth-of-type( 30 ),
+aside input:nth-of-type( 30 ):checked ~ nav:last-of-type label:nth-of-type( 31 ),
+aside input:nth-of-type( 31 ):checked ~ nav:last-of-type label:nth-of-type( 32 ),
+aside input:nth-of-type( 32 ):checked ~ nav:last-of-type label:nth-of-type( 33 ),
+aside input:nth-of-type( 33 ):checked ~ nav:last-of-type label:nth-of-type( 34 ),
+aside input:nth-of-type( 34 ):checked ~ nav:last-of-type label:nth-of-type( 35 ),
+aside input:nth-of-type( 35 ):checked ~ nav:last-of-type label:nth-of-type( 36 ),
+aside input:nth-of-type( 36 ):checked ~ nav:last-of-type label:nth-of-type( 37 ),
+aside input:nth-of-type( 37 ):checked ~ nav:last-of-type label:nth-of-type( 38 ),
+aside input:nth-of-type( 38 ):checked ~ nav:last-of-type label:nth-of-type( 39 ),
+aside input:nth-of-type( 39 ):checked ~ nav:last-of-type label:nth-of-type( 40 ) {
 
   display: block;
   right: 0;
@@ -729,7 +910,27 @@ aside input:nth-of-type( 16 ):checked ~ nav:last-of-type label:nth-of-type( 15 )
 aside input:nth-of-type( 17 ):checked ~ nav:last-of-type label:nth-of-type( 16 ),
 aside input:nth-of-type( 18 ):checked ~ nav:last-of-type label:nth-of-type( 17 ),
 aside input:nth-of-type( 19 ):checked ~ nav:last-of-type label:nth-of-type( 18 ),
-aside input:nth-of-type( 20 ):checked ~ nav:last-of-type label:nth-of-type( 19 ) {
+aside input:nth-of-type( 20 ):checked ~ nav:last-of-type label:nth-of-type( 19 ),
+aside input:nth-of-type( 21 ):checked ~ nav:last-of-type label:nth-of-type( 20 ),
+aside input:nth-of-type( 22 ):checked ~ nav:last-of-type label:nth-of-type( 21 ),
+aside input:nth-of-type( 23 ):checked ~ nav:last-of-type label:nth-of-type( 22 ),
+aside input:nth-of-type( 24 ):checked ~ nav:last-of-type label:nth-of-type( 23 ),
+aside input:nth-of-type( 25 ):checked ~ nav:last-of-type label:nth-of-type( 24 ),
+aside input:nth-of-type( 26 ):checked ~ nav:last-of-type label:nth-of-type( 25 ),
+aside input:nth-of-type( 27 ):checked ~ nav:last-of-type label:nth-of-type( 26 ),
+aside input:nth-of-type( 28 ):checked ~ nav:last-of-type label:nth-of-type( 27 ),
+aside input:nth-of-type( 29 ):checked ~ nav:last-of-type label:nth-of-type( 28 ),
+aside input:nth-of-type( 30 ):checked ~ nav:last-of-type label:nth-of-type( 29 ),
+aside input:nth-of-type( 31 ):checked ~ nav:last-of-type label:nth-of-type( 30 ),
+aside input:nth-of-type( 32 ):checked ~ nav:last-of-type label:nth-of-type( 31 ),
+aside input:nth-of-type( 33 ):checked ~ nav:last-of-type label:nth-of-type( 32 ),
+aside input:nth-of-type( 34 ):checked ~ nav:last-of-type label:nth-of-type( 33 ),
+aside input:nth-of-type( 35 ):checked ~ nav:last-of-type label:nth-of-type( 34 ),
+aside input:nth-of-type( 36 ):checked ~ nav:last-of-type label:nth-of-type( 35 ),
+aside input:nth-of-type( 37 ):checked ~ nav:last-of-type label:nth-of-type( 36 ),
+aside input:nth-of-type( 38 ):checked ~ nav:last-of-type label:nth-of-type( 37 ),
+aside input:nth-of-type( 39 ):checked ~ nav:last-of-type label:nth-of-type( 38 ),
+aside input:nth-of-type( 40 ):checked ~ nav:last-of-type label:nth-of-type( 39 ) {
 
   display: block;
   left: 0;
@@ -754,7 +955,27 @@ aside input:nth-of-type( 16 ):checked ~ nav:last-of-type label:nth-of-type( 15 )
 aside input:nth-of-type( 17 ):checked ~ nav:last-of-type label:nth-of-type( 16 ):before,
 aside input:nth-of-type( 18 ):checked ~ nav:last-of-type label:nth-of-type( 17 ):before,
 aside input:nth-of-type( 19 ):checked ~ nav:last-of-type label:nth-of-type( 18 ):before,
-aside input:nth-of-type( 20 ):checked ~ nav:last-of-type label:nth-of-type( 19 ):before {
+aside input:nth-of-type( 20 ):checked ~ nav:last-of-type label:nth-of-type( 19 ):before,
+aside input:nth-of-type( 21 ):checked ~ nav:last-of-type label:nth-of-type( 20 ):before,
+aside input:nth-of-type( 22 ):checked ~ nav:last-of-type label:nth-of-type( 21 ):before,
+aside input:nth-of-type( 23 ):checked ~ nav:last-of-type label:nth-of-type( 22 ):before,
+aside input:nth-of-type( 24 ):checked ~ nav:last-of-type label:nth-of-type( 23 ):before,
+aside input:nth-of-type( 25 ):checked ~ nav:last-of-type label:nth-of-type( 24 ):before,
+aside input:nth-of-type( 26 ):checked ~ nav:last-of-type label:nth-of-type( 25 ):before,
+aside input:nth-of-type( 27 ):checked ~ nav:last-of-type label:nth-of-type( 26 ):before,
+aside input:nth-of-type( 28 ):checked ~ nav:last-of-type label:nth-of-type( 27 ):before,
+aside input:nth-of-type( 29 ):checked ~ nav:last-of-type label:nth-of-type( 28 ):before,
+aside input:nth-of-type( 30 ):checked ~ nav:last-of-type label:nth-of-type( 29 ):before,
+aside input:nth-of-type( 31 ):checked ~ nav:last-of-type label:nth-of-type( 30 ):before,
+aside input:nth-of-type( 32 ):checked ~ nav:last-of-type label:nth-of-type( 31 ):before,
+aside input:nth-of-type( 33 ):checked ~ nav:last-of-type label:nth-of-type( 32 ):before,
+aside input:nth-of-type( 34 ):checked ~ nav:last-of-type label:nth-of-type( 33 ):before,
+aside input:nth-of-type( 35 ):checked ~ nav:last-of-type label:nth-of-type( 34 ):before,
+aside input:nth-of-type( 36 ):checked ~ nav:last-of-type label:nth-of-type( 35 ):before,
+aside input:nth-of-type( 37 ):checked ~ nav:last-of-type label:nth-of-type( 36 ):before,
+aside input:nth-of-type( 38 ):checked ~ nav:last-of-type label:nth-of-type( 37 ):before,
+aside input:nth-of-type( 39 ):checked ~ nav:last-of-type label:nth-of-type( 38 ):before,
+aside input:nth-of-type( 40 ):checked ~ nav:last-of-type label:nth-of-type( 39 ):before {
 
   -webkit-transform: rotate(225deg);
   -moz-transform: rotate(225deg);
